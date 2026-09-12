@@ -1,0 +1,19 @@
+{
+  "status": "EXPECTED_FAILURE_DETECTED",
+  "variant": "deep32",
+  "onehot": true,
+  "negative": true,
+  "rows": [
+    {
+      "name": "compile",
+      "exit_code": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "run",
+      "exit_code": 1,
+      "sha256": "33eebd78617b30e7a65ba25b65ef6f4943926cd7e8fe99cccaecaf998e90b80b"
+    }
+  ],
+  "dut_sha256": "0cc6a5f6f5a33506e0c9f3483f170a288334ffad6f02d69b07f012f0830e288f"
+}

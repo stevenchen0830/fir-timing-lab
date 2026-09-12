@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "variant": "deep32",
+  "onehot": true,
+  "rows": [
+    {
+      "name": "compile",
+      "exit_code": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "run",
+      "exit_code": 0,
+      "sha256": "9f75de8122f63803c1f008d02612e9909966b742070d5162e3431e6ad0b3bb91"
+    }
+  ],
+  "dut_sha256": "0cc6a5f6f5a33506e0c9f3483f170a288334ffad6f02d69b07f012f0830e288f"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "variant": "deep32",
+  "rows": [
+    {
+      "name": "compile",
+      "exit_code": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "run",
+      "exit_code": 0,
+      "sha256": "9f75de8122f63803c1f008d02612e9909966b742070d5162e3431e6ad0b3bb91"
+    }
+  ],
+  "dut_sha256": "97a018b38f30676a9abd7b3f96028dc92018125c50ffc58608071f30bbf57c1a"
+}

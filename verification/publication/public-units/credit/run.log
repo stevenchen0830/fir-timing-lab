@@ -1,0 +1,2 @@
+CREDIT_GOLDEN_PASS checks=2852 full_cycles=2076 reset_positions=5
+/home/ibex/fir-timing-lab-publish-units-20260912/credit/tb.sv:44: $finish called at 6203510 (1ps)

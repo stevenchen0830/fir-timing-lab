@@ -1,0 +1,49 @@
+name: Full 134-frame candidate regression
+on:
+  workflow_dispatch:
+    inputs:
+      variant:
+        type: choice
+        default: deep32
+        options: [deep32, segmented]
+      onehot_credit:
+        type: boolean
+        default: true
+permissions:
+  contents: read
+jobs:
+  full:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build pinned Verilator
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y autoconf flex bison help2man g++ make
+          git clone --branch v5.050 --depth 1 https://github.com/verilator/verilator.git "$RUNNER_TEMP/verilator-src"
+          cd "$RUNNER_TEMP/verilator-src"
+          autoconf
+          ./configure --prefix="$RUNNER_TEMP/verilator"
+          make -j2
+          make install
+      - name: Run complete frames
+        env:
+          VARIANT: ${{ inputs.variant }}
+          CREDIT: ${{ inputs.onehot_credit }}
+        run: |
+          args=()
+          if [ "$CREDIT" = "true" ]; then args+=(--onehot-credit); fi
+          python3 experiments/fir_core_opt/run_frames.py --variant "$VARIANT" "${args[@]}" \
+            --suite full --engine verilator --verilator "$RUNNER_TEMP/verilator/bin/verilator" \
+            --out "$RUNNER_TEMP/full-frames"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: full-frame-evidence
+          path: |
+            ${{ runner.temp }}/full-frames/evidence
+            ${{ runner.temp }}/full-frames/run/summary.json
+            ${{ runner.temp }}/full-frames/run/compile.log
+            ${{ runner.temp }}/full-frames/run/frames.log
+

@@ -1,0 +1,11 @@
+{
+  "scope": "Private model identifiers only; NO license or model redistribution",
+  "files": {
+    "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+    "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5",
+    "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+    "tech.lef": "b46a48af7826a0fde299b08c44c41d1ec82fcce01090e96dba27f593639ff931",
+    "cells.lef": "6e148700dd9075b1e7a78a87b118384ffa531844d46caf0792895d0950eb73e5"
+  }
+}
+

@@ -1,0 +1,2 @@
+MAC_GOLDEN_PASS cycles=6000 checks=4574 reset_positions=5
+/home/ibex/fir-timing-lab-publish-units-20260912/mac32/tb.sv:47: $finish called at 6003510 (1ps)

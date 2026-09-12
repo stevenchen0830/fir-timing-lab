@@ -1,0 +1,33 @@
+name: Public RTL verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  library-free:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install library-free tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y iverilog
+          python3 --version
+          iverilog -V
+      - name: Check publication boundary
+        run: python3 tools/check_public_tree.py --tracked
+      - name: Reference, MAC, credit, negative controls and hashes
+        run: python3 tools/validate_public.py --out "$RUNNER_TEMP/public-verification"
+      - name: Generate candidate interface
+        run: |
+          python3 tools/generate_rtl.py --variant deep32 --onehot-credit --out "$RUNNER_TEMP/generated"
+          test -s "$RUNNER_TEMP/generated/rtl.f"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-verification
+          path: ${{ runner.temp }}/public-verification
+

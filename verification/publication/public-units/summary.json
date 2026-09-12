@@ -1,0 +1,35 @@
+{
+  "pass": true,
+  "tests": [
+    {
+      "test": "reference",
+      "exit_code": 0,
+      "seconds": 1.4206669940000012
+    },
+    {
+      "test": "evidence",
+      "exit_code": 0,
+      "seconds": 0.16662789200000816
+    },
+    {
+      "test": "buffer-tests",
+      "exit_code": 0,
+      "seconds": 0.11574939499999459
+    },
+    {
+      "test": "mac32",
+      "exit_code": 0,
+      "seconds": 25.755823401
+    },
+    {
+      "test": "credit",
+      "exit_code": 0,
+      "seconds": 30.762662689999985
+    },
+    {
+      "test": "credit-negative",
+      "exit_code": 0,
+      "seconds": 5.435149572
+    }
+  ]
+}

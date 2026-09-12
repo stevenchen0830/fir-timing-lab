@@ -1,0 +1,33 @@
+{
+  "variant": "deep32",
+  "scope": "complete generated FIR frame regression, not STA",
+  "baseline_files": {
+    "rtl/img_filter.v": "b1ffeaf5fccad2442519b58076420b3a723d9c800e29ad7f26974ca817566283",
+    "rtl/img_filter_def.v": "b14716cadcc1f058debacf5775843ae3d0682abfe01a59e3c181f3e8f189c0fa",
+    "verification/img_filter_tb.v": "39fa1e7324a8e6d124e17328bd58622332a0842001ad234752dc51123c10ed6d",
+    "experiments/sram_multirate/build_integrated.py": "6bc784aca385696d6fc5f42528c1a577fc25bc2af6446037b8a2b53b9c457da1",
+    "experiments/sram_multirate/run_integrated.py": "f5aff4d50f3d86ed4f636590255d77215173d4def467436ba0c9acc15cd4f101",
+    "experiments/sram_multirate/rtl/fir_mac_narrow.sv": "29935817d5796cb5e107dd5af83485f1d257caa9621da828cd25b0a7a32705fe",
+    "experiments/sram_multirate/rtl/fir_transaction_queue.sv": "4137e9a79d9dc0d8d19cb063359ab39c2acdcdd724fff88531d93d7c59188423",
+    "experiments/sram_multirate/rtl/sram_related_boundary.sv": "23894d14c4336ee0fdca55340ab03a2d6148f5d164bf81e0b75714476f99f67a",
+    "experiments/sram_multirate/rtl/striped_sram_scheduler.sv": "6c4bee9d66ea5f367eae4168591c683c94ee725dce1c05b156b5f0edbd2f4043",
+    "experiments/sram_multirate/verification/striped_memory_model.svh": "7f9c1292cad0f2d53ec7d730d670ca127f0d53687718857ac6fab6c73bc20029"
+  },
+  "candidate_mac_sha256": "a91552014a58ee581e9e759c26df9e41f52e8425b66746dfa482d4e93f5e6ea5",
+  "credit_shell": true,
+  "onehot_credit": true,
+  "snapshot_files": {
+    "rtl/img_filter.v": "b1ffeaf5fccad2442519b58076420b3a723d9c800e29ad7f26974ca817566283",
+    "rtl/img_filter_def.v": "b14716cadcc1f058debacf5775843ae3d0682abfe01a59e3c181f3e8f189c0fa",
+    "verification/img_filter_tb.v": "39fa1e7324a8e6d124e17328bd58622332a0842001ad234752dc51123c10ed6d",
+    "experiments/sram_multirate/build_integrated.py": "10d97cfaba776ed082337630987e84066743c0651f7928850f28da4ff19f227e",
+    "experiments/sram_multirate/run_integrated.py": "f5aff4d50f3d86ed4f636590255d77215173d4def467436ba0c9acc15cd4f101",
+    "experiments/sram_multirate/integrate_credit.py": "bd24d0c6c400b721670ebf9e4f8eef114d9ac87908c13ad0395d9ff500a608b2",
+    "experiments/sram_multirate/rtl/fir_mac_narrow.sv": "a91552014a58ee581e9e759c26df9e41f52e8425b66746dfa482d4e93f5e6ea5",
+    "experiments/sram_multirate/rtl/mac_credit.sv": "a6cb0bcdbafc9027c5a0fdc478eceda9fb46ef1908a57aaefbf623284381502b",
+    "experiments/sram_multirate/rtl/sram_related_boundary.sv": "23894d14c4336ee0fdca55340ab03a2d6148f5d164bf81e0b75714476f99f67a",
+    "experiments/sram_multirate/rtl/striped_sram_scheduler.sv": "6c4bee9d66ea5f367eae4168591c683c94ee725dce1c05b156b5f0edbd2f4043",
+    "experiments/sram_multirate/rtl/fir_transaction_queue.sv": "4137e9a79d9dc0d8d19cb063359ab39c2acdcdd724fff88531d93d7c59188423",
+    "experiments/sram_multirate/verification/striped_memory_model.svh": "7f9c1292cad0f2d53ec7d730d670ca127f0d53687718857ac6fab6c73bc20029"
+  }
+}

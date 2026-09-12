@@ -1,0 +1,2116 @@
+{
+  "scope": "Mixed scopes explicitly labeled per run; NOT full closure",
+  "rows": [
+    {
+      "status": "SCREEN_COMPLETE_NOT_PHYSICAL_CLOSURE",
+      "scope": "registered-input MAC only; ideal clock and zero interconnect; NOT WHOLE FIR",
+      "variant": "deep32",
+      "lanes": 1,
+      "period_ns": 1,
+      "uncertainty_ns": [
+        0.15,
+        0.03
+      ],
+      "input_delay_ns": [
+        0.1,
+        0.05
+      ],
+      "output_delay_ns": [
+        0.1,
+        -0.05
+      ],
+      "load_pf": 0.01,
+      "slew_ns": 0.1,
+      "activity": 0.1,
+      "corners": {
+        "slow": {
+          "setup": [
+            0.01081,
+            0.0
+          ],
+          "hold": [
+            0.06326,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            0.32725,
+            0.0
+          ],
+          "hold": [
+            0.03165,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            0.51341,
+            0.0
+          ],
+          "hold": [
+            -0.00421,
+            -0.04627
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "synth",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 59.830259471000005,
+          "log_sha256": "1e1e3cc0c9a7d0d48a37f9b8ce6c1bdb016a4b822327c27e4a0c68c8785d3af2",
+          "peak_rss_kib": 1343948
+        },
+        {
+          "stage": "export",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 1.3189376159999995,
+          "log_sha256": "dac3f266020e8e5e202d4145a35bb310681cfb5e53e6f61c30725392fc874e60",
+          "peak_rss_kib": 542732
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 6.285789946000008,
+          "log_sha256": "4afc896e77938aaa547a9ad6f021dfcdccb70734c76e47bd6a2b9fdbab95334d",
+          "peak_rss_kib": 413936
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 6.185384431000003,
+          "log_sha256": "8256e0003560209a2e0b7e49be6377973223c468a0db3dca3f0ad300041b24d2",
+          "peak_rss_kib": 414240
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 6.135798815000001,
+          "log_sha256": "5e22e033c56455ced47f14052a72d3f0f2f9f9a3e3192c2fd66ad8874545d0e1",
+          "peak_rss_kib": 414088
+        }
+      ],
+      "all_corner_setup_pass": true,
+      "dut_sha256": "18610b152dbf788fc2b796721531c564e7b425bfc827dd2b044bf2e664117a7a",
+      "models": {
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5"
+      },
+      "run": "deep32",
+      "source_summary_sha256": "7e8533708061d984e399c9feb9d83ce6f0795c7a3aad940e9f4be61a218276dd",
+      "mapped_area_um2": 938416.953601,
+      "mapped_num_cells": 73054,
+      "stat_sha256": "9e8b8cb4691bee1c574b458f1e51219959335ca0cc4d81bdbb26c32cfe8dc90f",
+      "timing_report_sha256": {
+        "slow": "4afc896e77938aaa547a9ad6f021dfcdccb70734c76e47bd6a2b9fdbab95334d",
+        "typical": "8256e0003560209a2e0b7e49be6377973223c468a0db3dca3f0ad300041b24d2",
+        "fast": "5e22e033c56455ced47f14052a72d3f0f2f9f9a3e3192c2fd66ad8874545d0e1"
+      },
+      "vectorless_power_w": {
+        "slow": 0.615,
+        "typical": 0.753,
+        "fast": 0.93
+      }
+    },
+    {
+      "status": "SCREEN_COMPLETE_NOT_PHYSICAL_CLOSURE",
+      "scope": "registered-input MAC only; ideal clock and zero interconnect; NOT WHOLE FIR",
+      "variant": "deep32",
+      "lanes": 1,
+      "period_ns": 1,
+      "uncertainty_ns": [
+        0.15,
+        0.03
+      ],
+      "input_delay_ns": [
+        0.1,
+        0.05
+      ],
+      "output_delay_ns": [
+        0.1,
+        -0.05
+      ],
+      "load_pf": 0.01,
+      "slew_ns": 0.1,
+      "activity": 0.1,
+      "corners": {
+        "slow": {
+          "setup": [
+            -0.96031,
+            -307.91156
+          ],
+          "hold": [
+            0.06326,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            -0.25923,
+            -4.92117
+          ],
+          "hold": [
+            0.03165,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            0.17588,
+            0.0
+          ],
+          "hold": [
+            -0.00421,
+            -0.04627
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "synth",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 80.41573863500003,
+          "log_sha256": "13fac8c94fb312621263add85767346915a2409d919dde646de10db0cffa81de",
+          "peak_rss_kib": 1346704
+        },
+        {
+          "stage": "export",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 1.3698087880000003,
+          "log_sha256": "c628c283219d17c50c47124eb250f8e7486a12e50718b66987daba7c154a355e",
+          "peak_rss_kib": 516004
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 5.082155800999999,
+          "log_sha256": "848751ebbc8f9d2b05d37e68fc5fcff486ba906a36f79c76f096928fc03b48a1",
+          "peak_rss_kib": 388172
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 5.281086946999949,
+          "log_sha256": "d38b4ba5b9ae1764c924298165c676bda27bda399cfb2a4f922edf5d73631b3c",
+          "peak_rss_kib": 388176
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 5.079973554999924,
+          "log_sha256": "67b140274c6dfaeeed21cb55962b61773ed56d45bbe01fe68436f28cd074cae1",
+          "peak_rss_kib": 388400
+        }
+      ],
+      "all_corner_setup_pass": false,
+      "credit_shell": true,
+      "dut_sha256": "57b2559af519abe93dff59e241a5aa92b82be959a3c1e21ae95ea9afe5bcb66f",
+      "models": {
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5"
+      },
+      "run": "deep32-credit",
+      "source_summary_sha256": "1b44af0282e9d239a73ced5616ef7fb28b07b87e270585359e520444d166a63c",
+      "mapped_area_um2": 643517.783999,
+      "mapped_num_cells": 70880,
+      "stat_sha256": "d6f6f8ae458333b30f2f47aa91309ad7a0f844e0a7548c8f6fcd634f11b8dedb",
+      "timing_report_sha256": {
+        "slow": "848751ebbc8f9d2b05d37e68fc5fcff486ba906a36f79c76f096928fc03b48a1",
+        "typical": "d38b4ba5b9ae1764c924298165c676bda27bda399cfb2a4f922edf5d73631b3c",
+        "fast": "67b140274c6dfaeeed21cb55962b61773ed56d45bbe01fe68436f28cd074cae1"
+      },
+      "vectorless_power_w": {
+        "slow": 0.423,
+        "typical": 0.521,
+        "fast": 0.641
+      }
+    },
+    {
+      "status": "SCREEN_COMPLETE_NOT_PHYSICAL_CLOSURE",
+      "scope": "registered-input MAC only; ideal clock and zero interconnect; NOT WHOLE FIR",
+      "variant": "deep32",
+      "lanes": 1,
+      "period_ns": 1,
+      "uncertainty_ns": [
+        0.15,
+        0.03
+      ],
+      "input_delay_ns": [
+        0.1,
+        0.05
+      ],
+      "output_delay_ns": [
+        0.1,
+        -0.05
+      ],
+      "load_pf": 0.01,
+      "slew_ns": 0.1,
+      "activity": 0.1,
+      "corners": {
+        "slow": {
+          "setup": [
+            -0.5567,
+            -262.45123
+          ],
+          "hold": [
+            0.06326,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            -0.03169,
+            -0.03169
+          ],
+          "hold": [
+            0.03165,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            0.28412,
+            0.0
+          ],
+          "hold": [
+            -0.00421,
+            -0.04627
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "synth",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 71.61467286099992,
+          "log_sha256": "ba8599ec8d334d9ba25fba1dd3c75b53f8b22a803317ddc82caaa29cb415fb9d",
+          "peak_rss_kib": 1346100
+        },
+        {
+          "stage": "export",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 1.4198651060000884,
+          "log_sha256": "1087bdfc7107e0c18f649ea261df93dced89fa4d5eb668d36663fdee1f9a7d9e",
+          "peak_rss_kib": 531980
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 5.13296258299988,
+          "log_sha256": "9e4f5898c08d4c9194416ecabc5f2947ecb4299e39de1a1f80332b4a855abc5f",
+          "peak_rss_kib": 394296
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 5.484035353000081,
+          "log_sha256": "117d293b7e6f592c801112b8c02101100c0f45f29fb4bcbbf1ad40a3799b5af1",
+          "peak_rss_kib": 394040
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 5.08273069300003,
+          "log_sha256": "a5fd210fd707f876d0a180c12bdeb7eff0b72e3619a9226cbab7d1c41138a13b",
+          "peak_rss_kib": 394140
+        }
+      ],
+      "all_corner_setup_pass": false,
+      "credit_shell": true,
+      "onehot_credit": true,
+      "dut_sha256": "61544b3900c586a4b8edd9fbbbc990f3aac9acd6984d97dff6f6bafb85aac25e",
+      "models": {
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5"
+      },
+      "run": "deep32-credit-onehot",
+      "source_summary_sha256": "eb8265b19b6a4323d271961f55fe4ebc0f6c25a96930088e4ef780de71712a56",
+      "mapped_area_um2": 655038.820799,
+      "mapped_num_cells": 73047,
+      "stat_sha256": "e8c74b3c047c3bd19a6662b6424bccde163bfe23a930f175999b0ca8dbdbae55",
+      "timing_report_sha256": {
+        "slow": "9e4f5898c08d4c9194416ecabc5f2947ecb4299e39de1a1f80332b4a855abc5f",
+        "typical": "117d293b7e6f592c801112b8c02101100c0f45f29fb4bcbbf1ad40a3799b5af1",
+        "fast": "a5fd210fd707f876d0a180c12bdeb7eff0b72e3619a9226cbab7d1c41138a13b"
+      },
+      "vectorless_power_w": {
+        "slow": 0.426,
+        "typical": 0.525,
+        "fast": 0.646
+      }
+    },
+    {
+      "status": "FAILED_OR_BUDGET_STOP",
+      "scope": "full hierarchical FIR, selected core register paths ONLY",
+      "variant": "deep32",
+      "parasitics": "zero wire",
+      "clock": "ideal 1 ns, setup .15 ns, hold .03 ns",
+      "corners": {},
+      "stages": [
+        {
+          "stage": "synth",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 395.27619157500004,
+          "log_sha256": "23a22779b040a9026fc57e3db63ce44a7ca91b54f85fbd2ed91d7a13aec43825",
+          "peak_rss_kib": 3097512
+        },
+        {
+          "stage": "export",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 35.702863858,
+          "log_sha256": "3d55297373d923947fd20e1bc5a5de06d0ee9e6d1427db2dc3f689604827cc4e",
+          "peak_rss_kib": 10542448
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": -15,
+          "timeout": true,
+          "wall_seconds": 180.0042788359999,
+          "log_sha256": "408d888f10979911ffa9d45efd9c301c9184f37aed551adff2b137eea1fa0647",
+          "peak_rss_kib": null
+        }
+      ],
+      "error": "sta_slow failed or exceeded time budget; see its log",
+      "run": "full-core-deep32",
+      "source_summary_sha256": "c9778140826aa4e0e471bbec2ad9869c0af0942dbb7f1580c4c5a69900731201",
+      "mapped_area_um2": 25656499.411117,
+      "mapped_num_cells": 2675389,
+      "stat_sha256": "e62c9c95bda8292969f872deb784ce56c246a20679b89d2ed352eecc806f36db",
+      "timing_report_sha256": {
+        "slow": "408d888f10979911ffa9d45efd9c301c9184f37aed551adff2b137eea1fa0647"
+      }
+    },
+    {
+      "status": "CORE_GROUP_REPORTS_COMPLETE_NOT_FULL_COVERAGE",
+      "scope": "core clock path group; IO remains intentionally UNVERIFIED, not signoff",
+      "stages": [
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 100.17155216700007,
+          "log_sha256": "a2b9e8c1b1634441687b1dca2332f6685c26491601e9e1194caa3bac1e847d1b",
+          "peak_rss_kib": 9390872
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 96.95593569399989,
+          "log_sha256": "834893f8ef1aa01f8cf63dd9f3f78ecba539b82b4a9dd70644ffc9ffe3592b37",
+          "peak_rss_kib": 9399552
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 97.35924846000012,
+          "log_sha256": "8508677226f2b38f15db942f02f0adca2d6e87c7f738a8ef4a95ac3406722687",
+          "peak_rss_kib": 9397756
+        }
+      ],
+      "netlist_sha256": "f3d4c057ca280e2e2edf490b141003cd13de1bc770399d90a4eb509922a43ada",
+      "run": "full-core-group-sta",
+      "source_summary_sha256": "496b1c31497f6f9f38634b2315d0a8060a726bf7c2e47e49f4f96c1c069c80a0",
+      "timing_report_sha256": {
+        "slow": "a2b9e8c1b1634441687b1dca2332f6685c26491601e9e1194caa3bac1e847d1b",
+        "typical": "834893f8ef1aa01f8cf63dd9f3f78ecba539b82b4a9dd70644ffc9ffe3592b37",
+        "fast": "8508677226f2b38f15db942f02f0adca2d6e87c7f738a8ef4a95ac3406722687"
+      },
+      "core_group_setup_sample_ns": {
+        "slow": -1.8513,
+        "typical": -0.84005,
+        "fast": -0.26161
+      }
+    },
+    {
+      "status": "EARLY_PLACEMENT_COMPLETE_NOT_SIGNOFF",
+      "scope": "MAC_SCREEN one lane only; fixed common floorplan",
+      "parasitics": "LEF coarse conservative RC, placement estimate; no extracted SPEF",
+      "clock": "ideal; NO CTS",
+      "config": {
+        "core_um": [
+          10,
+          10,
+          1610,
+          1610
+        ],
+        "die_um": [
+          0,
+          0,
+          1620,
+          1620
+        ],
+        "density": 0.45,
+        "seed": 42,
+        "threads": 4,
+        "signal_layer": "M2",
+        "clock_layer": "M3",
+        "wire_conditioning": false
+      },
+      "corners": {
+        "slow": {
+          "setup": [
+            -1.56332,
+            -1881.63696
+          ],
+          "hold": [
+            0.06328,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            -0.62955,
+            -569.54895
+          ],
+          "hold": [
+            0.04416,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            -0.11615,
+            -17.22165
+          ],
+          "hold": [
+            0.03232,
+            0.0
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "place",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 20.958363602999952,
+          "log_sha256": "a3264e257115c9b212e08d1f88f48d301a58ec143b19cef1778020063f2b54f8",
+          "peak_rss_kib": 579144
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 5.23372047099997,
+          "log_sha256": "d21efdbf547feb6b460889831b70a1ba52a58ce6a50e358f7d861e76246ad626",
+          "peak_rss_kib": 403172
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 5.482869326999889,
+          "log_sha256": "1f82bb93b0cf5ef46dafd6a1ed247d45e5b14a9d1c147b43cfbfdb94324d72c0",
+          "peak_rss_kib": 403216
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 5.032765207000011,
+          "log_sha256": "b1374aed12d865d6665e331484652ed087cfa2df11b8724649862b579992c746",
+          "peak_rss_kib": 402900
+        }
+      ],
+      "netlist_sha256": "74f1007f7d609de541070b46374ea39da9ec1010ccb5a78fe154ecd7707a6a12",
+      "sdc_sha256": "81abf3b005850c0f8e608cecc760f38898dc031470656ad04da7d0abc5090e9f",
+      "models": {
+        "README.release": "8c403439f2e8a0223fce198e5d45e58956725b7da275592666015c5bea3a14e2",
+        "COPYRIGHT.txt": "8916bbdbc233b6967d829c6c3a7c1b2e8cad8073b451f043fbfae9771347ab6d",
+        "tech.lef": "b46a48af7826a0fde299b08c44c41d1ec82fcce01090e96dba27f593639ff931",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "README.lef": "40fc2aca17d3102e4ed84b2814b6b115c615a00a36d74713a68d10b994b52791",
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "cells.lef": "6e148700dd9075b1e7a78a87b118384ffa531844d46caf0792895d0950eb73e5",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5",
+        "manifest.json": "e4f17e967c5a572c9cf2d3ac2f0dc52288f4727cfa973580a3b7466dda4fd0c8"
+      },
+      "run": "place-credit-onehot",
+      "source_summary_sha256": "6cf6f2fce11a49d5644ede10d5ed44c34fa7cf13f9e035efb3efc7665e57fcf5",
+      "timing_report_sha256": {
+        "slow": "d21efdbf547feb6b460889831b70a1ba52a58ce6a50e358f7d861e76246ad626",
+        "typical": "1f82bb93b0cf5ef46dafd6a1ed247d45e5b14a9d1c147b43cfbfdb94324d72c0",
+        "fast": "b1374aed12d865d6665e331484652ed087cfa2df11b8724649862b579992c746"
+      },
+      "vectorless_power_w": {
+        "slow": 0.436,
+        "typical": 0.537,
+        "fast": 0.661
+      }
+    },
+    {
+      "status": "FAILED_OR_BUDGET_STOP",
+      "scope": "MAC_SCREEN one lane only; fixed common floorplan",
+      "parasitics": "LEF coarse conservative RC, placement estimate; no extracted SPEF",
+      "clock": "ideal; NO CTS",
+      "config": {
+        "core_um": [
+          10,
+          10,
+          1610,
+          1610
+        ],
+        "die_um": [
+          0,
+          0,
+          1620,
+          1620
+        ],
+        "density": 0.45,
+        "seed": 42,
+        "threads": 4,
+        "signal_layer": "M2",
+        "clock_layer": "M3"
+      },
+      "corners": {},
+      "stages": [
+        {
+          "stage": "place",
+          "exit_code": 1,
+          "timeout": false,
+          "wall_seconds": 2.523942998999985,
+          "log_sha256": "cbc4aee0e5c946ffce8e3f1b2fd291565f7678eda627178460a069c3f36d6953",
+          "peak_rss_kib": 317344
+        }
+      ],
+      "netlist_sha256": "f0a09a450045f315ec866a2844b2d718a8b6d1d6c9dd91bd99ea2c791c24ffa2",
+      "sdc_sha256": "81abf3b005850c0f8e608cecc760f38898dc031470656ad04da7d0abc5090e9f",
+      "models": {
+        "README.release": "8c403439f2e8a0223fce198e5d45e58956725b7da275592666015c5bea3a14e2",
+        "COPYRIGHT.txt": "8916bbdbc233b6967d829c6c3a7c1b2e8cad8073b451f043fbfae9771347ab6d",
+        "tech.lef": "b46a48af7826a0fde299b08c44c41d1ec82fcce01090e96dba27f593639ff931",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "README.lef": "40fc2aca17d3102e4ed84b2814b6b115c615a00a36d74713a68d10b994b52791",
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "cells.lef": "6e148700dd9075b1e7a78a87b118384ffa531844d46caf0792895d0950eb73e5",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5",
+        "manifest.json": "e4f17e967c5a572c9cf2d3ac2f0dc52288f4727cfa973580a3b7466dda4fd0c8"
+      },
+      "error": "place failed or exceeded time budget; see its log",
+      "run": "place-deep32",
+      "source_summary_sha256": "d0ab298495024aab5af6b99e0e2f9aed573a0788116827506055c514ce1e87c1"
+    },
+    {
+      "status": "EARLY_PLACEMENT_COMPLETE_NOT_SIGNOFF",
+      "scope": "MAC_SCREEN one lane only; fixed common floorplan",
+      "parasitics": "LEF coarse conservative RC, placement estimate; no extracted SPEF",
+      "clock": "ideal; NO CTS",
+      "config": {
+        "core_um": [
+          10,
+          10,
+          1610,
+          1610
+        ],
+        "die_um": [
+          0,
+          0,
+          1620,
+          1620
+        ],
+        "density": 0.45,
+        "seed": 42,
+        "threads": 4,
+        "signal_layer": "M2",
+        "clock_layer": "M3",
+        "wire_conditioning": true
+      },
+      "corners": {
+        "slow": {
+          "setup": [
+            -4.82904,
+            -63492.53906
+          ],
+          "hold": [
+            0.06328,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            -2.77323,
+            -29591.19336
+          ],
+          "hold": [
+            0.04416,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            -1.61906,
+            -11392.66602
+          ],
+          "hold": [
+            0.02259,
+            0.0
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "place",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 28.577781408000078,
+          "log_sha256": "06a64451fdac8a7fa08d3f10c1d2e020af15b55bbf83eac0cafa891c63e30f0e",
+          "peak_rss_kib": 845716
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 7.093393864999939,
+          "log_sha256": "8820ecc1e405089eeeba4571ad5e2d0e73d7cd633c17bd5fb63e26ac29500761",
+          "peak_rss_kib": 473240
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 7.496528494000017,
+          "log_sha256": "ec10f7819e1a3d84ac294831bce7549bacbc8780153f4963142edf0443630175",
+          "peak_rss_kib": 473028
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 7.340488617000005,
+          "log_sha256": "8dc7f5c1f38d1c093c35506de667dce5bfd354e29b8f6e6586899c20a2d92529",
+          "peak_rss_kib": 473112
+        }
+      ],
+      "netlist_sha256": "f0a09a450045f315ec866a2844b2d718a8b6d1d6c9dd91bd99ea2c791c24ffa2",
+      "sdc_sha256": "81abf3b005850c0f8e608cecc760f38898dc031470656ad04da7d0abc5090e9f",
+      "models": {
+        "README.release": "8c403439f2e8a0223fce198e5d45e58956725b7da275592666015c5bea3a14e2",
+        "COPYRIGHT.txt": "8916bbdbc233b6967d829c6c3a7c1b2e8cad8073b451f043fbfae9771347ab6d",
+        "tech.lef": "b46a48af7826a0fde299b08c44c41d1ec82fcce01090e96dba27f593639ff931",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "README.lef": "40fc2aca17d3102e4ed84b2814b6b115c615a00a36d74713a68d10b994b52791",
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "cells.lef": "6e148700dd9075b1e7a78a87b118384ffa531844d46caf0792895d0950eb73e5",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5",
+        "manifest.json": "e4f17e967c5a572c9cf2d3ac2f0dc52288f4727cfa973580a3b7466dda4fd0c8"
+      },
+      "run": "place-deep32-conditioned",
+      "source_summary_sha256": "e7c08ea42b4b4fe3eb86ef59c4c1b9201a499ef06f93c9a9b32c4de0643906a5",
+      "timing_report_sha256": {
+        "slow": "8820ecc1e405089eeeba4571ad5e2d0e73d7cd633c17bd5fb63e26ac29500761",
+        "typical": "ec10f7819e1a3d84ac294831bce7549bacbc8780153f4963142edf0443630175",
+        "fast": "8dc7f5c1f38d1c093c35506de667dce5bfd354e29b8f6e6586899c20a2d92529"
+      },
+      "vectorless_power_w": {
+        "slow": 0.652,
+        "typical": 0.798,
+        "fast": 0.986
+      }
+    },
+    {
+      "status": "FAILED_OR_BUDGET_STOP",
+      "scope": "MAC_SCREEN one lane only; fixed common floorplan",
+      "parasitics": "LEF coarse conservative RC, placement estimate; no extracted SPEF",
+      "clock": "ideal; NO CTS",
+      "config": {
+        "core_um": [
+          10,
+          10,
+          1610,
+          1610
+        ],
+        "die_um": [
+          0,
+          0,
+          1620,
+          1620
+        ],
+        "density": 0.45,
+        "seed": 42,
+        "threads": 4,
+        "signal_layer": "M2",
+        "clock_layer": "M3"
+      },
+      "corners": {},
+      "stages": [
+        {
+          "stage": "place",
+          "exit_code": 1,
+          "timeout": false,
+          "wall_seconds": 2.0725789820000102,
+          "log_sha256": "0f696e53ec69215e8dd0ec17232260d171d31300b227e0f31c511bf142ccbf2b",
+          "peak_rss_kib": 328784
+        }
+      ],
+      "netlist_sha256": "f0a09a450045f315ec866a2844b2d718a8b6d1d6c9dd91bd99ea2c791c24ffa2",
+      "sdc_sha256": "81abf3b005850c0f8e608cecc760f38898dc031470656ad04da7d0abc5090e9f",
+      "models": {
+        "README.release": "8c403439f2e8a0223fce198e5d45e58956725b7da275592666015c5bea3a14e2",
+        "COPYRIGHT.txt": "8916bbdbc233b6967d829c6c3a7c1b2e8cad8073b451f043fbfae9771347ab6d",
+        "tech.lef": "b46a48af7826a0fde299b08c44c41d1ec82fcce01090e96dba27f593639ff931",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "README.lef": "40fc2aca17d3102e4ed84b2814b6b115c615a00a36d74713a68d10b994b52791",
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "cells.lef": "6e148700dd9075b1e7a78a87b118384ffa531844d46caf0792895d0950eb73e5",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5",
+        "manifest.json": "e4f17e967c5a572c9cf2d3ac2f0dc52288f4727cfa973580a3b7466dda4fd0c8"
+      },
+      "error": "place failed or exceeded time budget; see its log",
+      "run": "place-deep32-v2",
+      "source_summary_sha256": "264e65825e78a47e2f1a2bc57ef6693c162bc3975218cd2688a46b2a7893a5f5"
+    },
+    {
+      "status": "EARLY_PLACEMENT_COMPLETE_NOT_SIGNOFF",
+      "scope": "MAC_SCREEN one lane only; fixed common floorplan",
+      "parasitics": "LEF coarse conservative RC, placement estimate; no extracted SPEF",
+      "clock": "ideal; NO CTS",
+      "config": {
+        "core_um": [
+          10,
+          10,
+          1610,
+          1610
+        ],
+        "die_um": [
+          0,
+          0,
+          1620,
+          1620
+        ],
+        "density": 0.45,
+        "seed": 42,
+        "threads": 4,
+        "signal_layer": "M2",
+        "clock_layer": "M3"
+      },
+      "corners": {
+        "slow": {
+          "setup": [
+            -2.4592,
+            -48297.1875
+          ],
+          "hold": [
+            0.06328,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            -1.33361,
+            -20749.42383
+          ],
+          "hold": [
+            0.04416,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            -0.67029,
+            -4745.86377
+          ],
+          "hold": [
+            0.02259,
+            0.0
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "place",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 18.638292180999997,
+          "log_sha256": "14242f49338db546b04fa9b989f9f4ba0ac7278d772ba79cb1876b625e983f14",
+          "peak_rss_kib": 584076
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 6.236291011999981,
+          "log_sha256": "d7f32dbb940073aae70ca5a8fe017a0f51de54dcbf6c198906312efa9821aabb",
+          "peak_rss_kib": 431856
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 6.3373564869999655,
+          "log_sha256": "fadf1284a5c790d0b4b373587bfd0f9c17d037cde65f21b3d16121ad78b60cf8",
+          "peak_rss_kib": 432364
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 6.33633351200001,
+          "log_sha256": "ca7de54d3b5a87aa3395ac9e65ebf0ac91770a9f442d459864e903f201c52903",
+          "peak_rss_kib": 432680
+        }
+      ],
+      "netlist_sha256": "f0a09a450045f315ec866a2844b2d718a8b6d1d6c9dd91bd99ea2c791c24ffa2",
+      "sdc_sha256": "81abf3b005850c0f8e608cecc760f38898dc031470656ad04da7d0abc5090e9f",
+      "models": {
+        "README.release": "8c403439f2e8a0223fce198e5d45e58956725b7da275592666015c5bea3a14e2",
+        "COPYRIGHT.txt": "8916bbdbc233b6967d829c6c3a7c1b2e8cad8073b451f043fbfae9771347ab6d",
+        "tech.lef": "b46a48af7826a0fde299b08c44c41d1ec82fcce01090e96dba27f593639ff931",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "README.lef": "40fc2aca17d3102e4ed84b2814b6b115c615a00a36d74713a68d10b994b52791",
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "cells.lef": "6e148700dd9075b1e7a78a87b118384ffa531844d46caf0792895d0950eb73e5",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5",
+        "manifest.json": "e4f17e967c5a572c9cf2d3ac2f0dc52288f4727cfa973580a3b7466dda4fd0c8"
+      },
+      "run": "place-deep32-v3",
+      "source_summary_sha256": "809086ef13a8dbea946ed51f1d52e3e47a94dae160713e0d707661855e501797",
+      "timing_report_sha256": {
+        "slow": "d7f32dbb940073aae70ca5a8fe017a0f51de54dcbf6c198906312efa9821aabb",
+        "typical": "fadf1284a5c790d0b4b373587bfd0f9c17d037cde65f21b3d16121ad78b60cf8",
+        "fast": "ca7de54d3b5a87aa3395ac9e65ebf0ac91770a9f442d459864e903f201c52903"
+      },
+      "vectorless_power_w": {
+        "slow": 0.634,
+        "typical": 0.778,
+        "fast": 0.962
+      }
+    },
+    {
+      "status": "EARLY_PLACEMENT_COMPLETE_NOT_SIGNOFF",
+      "scope": "MAC_SCREEN one lane only; fixed common floorplan",
+      "parasitics": "LEF coarse conservative RC, placement estimate; no extracted SPEF",
+      "clock": "ideal; NO CTS",
+      "config": {
+        "core_um": [
+          10,
+          10,
+          1610,
+          1610
+        ],
+        "die_um": [
+          0,
+          0,
+          1620,
+          1620
+        ],
+        "density": 0.45,
+        "seed": 42,
+        "threads": 4,
+        "signal_layer": "M2",
+        "clock_layer": "M3",
+        "wire_conditioning": false
+      },
+      "corners": {
+        "slow": {
+          "setup": [
+            -2.57908,
+            -7359.92627
+          ],
+          "hold": [
+            0.0515,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            -1.18841,
+            -1563.38672
+          ],
+          "hold": [
+            0.04762,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            -0.43041,
+            -77.47758
+          ],
+          "hold": [
+            0.01776,
+            0.0
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "place",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 12.213106829000026,
+          "log_sha256": "04a78b3bc7466198e74e9c6734ad542d60b276c4661d6a71fe5c81d3158c9eda",
+          "peak_rss_kib": 434704
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 2.623226769999974,
+          "log_sha256": "aa7ffe126e415a078fba44e5ae68ee7b7496c350af8686b9dbda3e678d70081b",
+          "peak_rss_kib": 259420
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 2.6228345540000646,
+          "log_sha256": "5ec5182a7dc9687e0614d70d0ea1904d245a4feb5a427689ce669f572fe03cd9",
+          "peak_rss_kib": 260608
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 2.9273974420000286,
+          "log_sha256": "ae53fb5236a4de3f0d6036b4a6b0148def70a157db133a189d258ee0041bcff4",
+          "peak_rss_kib": 258596
+        }
+      ],
+      "netlist_sha256": "45e02811a6f917bb14d3f96ddec4586f3809a12720ac7210424af2ecfa6a5ced",
+      "sdc_sha256": "81abf3b005850c0f8e608cecc760f38898dc031470656ad04da7d0abc5090e9f",
+      "models": {
+        "README.release": "8c403439f2e8a0223fce198e5d45e58956725b7da275592666015c5bea3a14e2",
+        "COPYRIGHT.txt": "8916bbdbc233b6967d829c6c3a7c1b2e8cad8073b451f043fbfae9771347ab6d",
+        "tech.lef": "b46a48af7826a0fde299b08c44c41d1ec82fcce01090e96dba27f593639ff931",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "README.lef": "40fc2aca17d3102e4ed84b2814b6b115c615a00a36d74713a68d10b994b52791",
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "cells.lef": "6e148700dd9075b1e7a78a87b118384ffa531844d46caf0792895d0950eb73e5",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5",
+        "manifest.json": "e4f17e967c5a572c9cf2d3ac2f0dc52288f4727cfa973580a3b7466dda4fd0c8"
+      },
+      "run": "place-v6",
+      "source_summary_sha256": "c8333069ae5a94ec32549aac3fa56766c4b3dbac5c928d2d7113e26c3b74e68d",
+      "timing_report_sha256": {
+        "slow": "aa7ffe126e415a078fba44e5ae68ee7b7496c350af8686b9dbda3e678d70081b",
+        "typical": "5ec5182a7dc9687e0614d70d0ea1904d245a4feb5a427689ce669f572fe03cd9",
+        "fast": "ae53fb5236a4de3f0d6036b4a6b0148def70a157db133a189d258ee0041bcff4"
+      },
+      "vectorless_power_w": {
+        "slow": 0.122,
+        "typical": 0.149,
+        "fast": 0.186
+      }
+    },
+    {
+      "status": "SCREEN_COMPLETE_NOT_PHYSICAL_CLOSURE",
+      "scope": "registered-input MAC only; ideal clock and zero interconnect; NOT WHOLE FIR",
+      "variant": "v6",
+      "lanes": 1,
+      "period_ns": 1,
+      "uncertainty_ns": [
+        0.15,
+        0.03
+      ],
+      "input_delay_ns": [
+        0.1,
+        0.05
+      ],
+      "output_delay_ns": [
+        0.1,
+        -0.05
+      ],
+      "load_pf": 0.01,
+      "slew_ns": 0.1,
+      "activity": 0.1,
+      "corners": {
+        "slow": {
+          "setup": [
+            -1.4356,
+            -2001.01343
+          ],
+          "hold": [
+            0.05148,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            -0.50995,
+            -295.76797
+          ],
+          "hold": [
+            0.03165,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            -0.0199,
+            -0.96563
+          ],
+          "hold": [
+            -0.00421,
+            -0.04627
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "synth",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 12.414893999000014,
+          "log_sha256": "9cdc23c4d85ccfc8dff5fbe20775cacc8139fc51e4745c649ef2d57d5d077772",
+          "peak_rss_kib": 265124
+        },
+        {
+          "stage": "export",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 0.6164858369998001,
+          "log_sha256": "05696f8bda5be00025bc31a2f0fdbbac7ffc3f97c5c3f22121c4d02ad0065501",
+          "peak_rss_kib": 252040
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 2.373810231999869,
+          "log_sha256": "51c21b8b234acf89133a2534f52bbbda7fe9d14b4abd49b49dab24cd4970ac66",
+          "peak_rss_kib": 248504
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 2.2223017810001693,
+          "log_sha256": "4f4b8ab9db68da965fdc21368b180c5125933990e2478a04fa42d9e0606796c1",
+          "peak_rss_kib": 248444
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 2.1726583629999823,
+          "log_sha256": "d55092d62521e43dd7096e4f326af929e0f848dc3ff4296b5d87b1cf977cd5e8",
+          "peak_rss_kib": 248200
+        }
+      ],
+      "all_corner_setup_pass": false,
+      "credit_shell": false,
+      "onehot_credit": false,
+      "dut_sha256": "fc26d4d55bf9910c69f3bb64a540291352e85a3ac4e9593692b7cd8104d39e6f",
+      "models": {
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5"
+      },
+      "run": "portable-v6",
+      "source_summary_sha256": "ee9ed304cdd6c701e6a081ab3065d2f5e8e53426b912b73934f1c405686abbb4",
+      "mapped_area_um2": 244144.656,
+      "mapped_num_cells": 31474,
+      "stat_sha256": "6bf47b0f12d83534bf8cd79fb5b0177635d28541b5a8cb241c634cc0d8127eaa",
+      "timing_report_sha256": {
+        "slow": "51c21b8b234acf89133a2534f52bbbda7fe9d14b4abd49b49dab24cd4970ac66",
+        "typical": "4f4b8ab9db68da965fdc21368b180c5125933990e2478a04fa42d9e0606796c1",
+        "fast": "d55092d62521e43dd7096e4f326af929e0f848dc3ff4296b5d87b1cf977cd5e8"
+      },
+      "vectorless_power_w": {
+        "slow": 0.116,
+        "typical": 0.142,
+        "fast": 0.176
+      }
+    },
+    {
+      "status": "SCREEN_COMPLETE_NOT_PHYSICAL_CLOSURE",
+      "scope": "registered-input MAC only; ideal clock and zero interconnect; NOT WHOLE FIR",
+      "variant": "prefix",
+      "lanes": 1,
+      "period_ns": 1,
+      "uncertainty_ns": [
+        0.15,
+        0.03
+      ],
+      "input_delay_ns": [
+        0.1,
+        0.05
+      ],
+      "output_delay_ns": [
+        0.1,
+        -0.05
+      ],
+      "load_pf": 0.01,
+      "slew_ns": 0.1,
+      "activity": 0.1,
+      "corners": {
+        "slow": {
+          "setup": [
+            -0.75141,
+            -1063.03662
+          ],
+          "hold": [
+            0.05148,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            -0.10364,
+            -10.23234
+          ],
+          "hold": [
+            0.03165,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            0.23914,
+            0.0
+          ],
+          "hold": [
+            -0.00421,
+            -0.04627
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "synth",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 38.909704979,
+          "log_sha256": "9c4d88597bfe3773d0306a713f62c8f63f7d8d1a3ac41a62230d76c8c1e707ce",
+          "peak_rss_kib": 539644
+        },
+        {
+          "stage": "export",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 1.2693158809999971,
+          "log_sha256": "aea83e117a20d3e4ccb57d41fc4fbdec80859e7603d5975653a9d150500706bf",
+          "peak_rss_kib": 486016
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.280033671000005,
+          "log_sha256": "9bdb0746f4d1cea3d728fbfaaffcf6ae2718411cfa721c41fb88ceae384b2d4e",
+          "peak_rss_kib": 371836
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.329428407000002,
+          "log_sha256": "ec096af6715a3ab5df854bdb599c4a41b482bf8c11ea3128a699249aef0f0fc1",
+          "peak_rss_kib": 371968
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.48000785,
+          "log_sha256": "1e12b33dcb5144b42e914c4a9c0187de39a903a01b865b5d1cae239360299962",
+          "peak_rss_kib": 371868
+        }
+      ],
+      "all_corner_setup_pass": false,
+      "dut_sha256": "d327e66d39212632904ab80485411fa691bc2c63c6027bedaa31e48e8c48464f",
+      "models": {
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5"
+      },
+      "run": "prefix",
+      "source_summary_sha256": "b7d9623f5f6bfcdfaf074f886cd147df23a68badf0b490124acef4c7a3e3cff4",
+      "mapped_area_um2": 389947.7232,
+      "mapped_num_cells": 70743,
+      "stat_sha256": "9d4409fa19a22f7d181856febdc5c0540ab7a9b8a169414bc3ed1f5e75f0d47e",
+      "timing_report_sha256": {
+        "slow": "9bdb0746f4d1cea3d728fbfaaffcf6ae2718411cfa721c41fb88ceae384b2d4e",
+        "typical": "ec096af6715a3ab5df854bdb599c4a41b482bf8c11ea3128a699249aef0f0fc1",
+        "fast": "1e12b33dcb5144b42e914c4a9c0187de39a903a01b865b5d1cae239360299962"
+      },
+      "vectorless_power_w": {
+        "slow": 0.131,
+        "typical": 0.16,
+        "fast": 0.199
+      }
+    },
+    {
+      "status": "SCREEN_COMPLETE_NOT_PHYSICAL_CLOSURE",
+      "scope": "registered-input MAC only; ideal clock and zero interconnect; NOT WHOLE FIR",
+      "variant": "segmented",
+      "lanes": 1,
+      "period_ns": 1,
+      "uncertainty_ns": [
+        0.15,
+        0.03
+      ],
+      "input_delay_ns": [
+        0.1,
+        0.05
+      ],
+      "output_delay_ns": [
+        0.1,
+        -0.05
+      ],
+      "load_pf": 0.01,
+      "slew_ns": 0.1,
+      "activity": 0.1,
+      "corners": {
+        "slow": {
+          "setup": [
+            -0.39176,
+            -365.71454
+          ],
+          "hold": [
+            0.05148,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            0.0797,
+            0.0
+          ],
+          "hold": [
+            0.03165,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            0.36342,
+            0.0
+          ],
+          "hold": [
+            -0.00421,
+            -0.04627
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "synth",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 38.708533113,
+          "log_sha256": "88db137db1d2da8549b983a6e3aca93d10da5438f5ba73cade88714d343f0e9e",
+          "peak_rss_kib": 1063052
+        },
+        {
+          "stage": "export",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 1.0180924029999971,
+          "log_sha256": "8e7f9c510409f1497a23d378ec6022f8a7cb4f17f533babe9436ccc9c9a1552b",
+          "peak_rss_kib": 396864
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.280159453000003,
+          "log_sha256": "b0270e586d78495dd041394fe64bfb164d87cc1526d61212e50e21b31027be75",
+          "peak_rss_kib": 328332
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.2297237370000005,
+          "log_sha256": "fb342548a1bbb7b032b14709243a6bd59f167ed53c452b838387e3ee3d2aaa90",
+          "peak_rss_kib": 327820
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.380755162,
+          "log_sha256": "e68d398865f1e2b98bea1df71bcef09dac33ae638d655d83f6a5d2c38df725f3",
+          "peak_rss_kib": 327980
+        }
+      ],
+      "all_corner_setup_pass": false,
+      "dut_sha256": "1b89f2d32210dbb40f837448eb0c711230af69541d1544db576c534500ccf3dc",
+      "models": {
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5"
+      },
+      "run": "segmented",
+      "source_summary_sha256": "7ccbf3f77d4072cf5d4e956b54c7b4d386e27e1b92c30df5e1d3e3dff1ed7428",
+      "mapped_area_um2": 554816.1024,
+      "mapped_num_cells": 51398,
+      "stat_sha256": "56aae83c6e25681d4a3fa61d8114d30f405d6b17f67aa1c5c1229cdcb0b7b762",
+      "timing_report_sha256": {
+        "slow": "b0270e586d78495dd041394fe64bfb164d87cc1526d61212e50e21b31027be75",
+        "typical": "fb342548a1bbb7b032b14709243a6bd59f167ed53c452b838387e3ee3d2aaa90",
+        "fast": "e68d398865f1e2b98bea1df71bcef09dac33ae638d655d83f6a5d2c38df725f3"
+      },
+      "vectorless_power_w": {
+        "slow": 0.328,
+        "typical": 0.402,
+        "fast": 0.497
+      }
+    },
+    {
+      "status": "SCREEN_COMPLETE_NOT_PHYSICAL_CLOSURE",
+      "scope": "registered-input MAC only; ideal clock and zero interconnect; NOT WHOLE FIR",
+      "variant": "segmented_kept",
+      "lanes": 1,
+      "period_ns": 1,
+      "uncertainty_ns": [
+        0.15,
+        0.03
+      ],
+      "input_delay_ns": [
+        0.1,
+        0.05
+      ],
+      "output_delay_ns": [
+        0.1,
+        -0.05
+      ],
+      "load_pf": 0.01,
+      "slew_ns": 0.1,
+      "activity": 0.1,
+      "corners": {
+        "slow": {
+          "setup": [
+            -0.16384,
+            -238.60855
+          ],
+          "hold": [
+            0.05148,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            0.24481,
+            0.0
+          ],
+          "hold": [
+            0.03165,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            0.46255,
+            0.0
+          ],
+          "hold": [
+            -0.00421,
+            -0.04627
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "synth",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 43.23121180499999,
+          "log_sha256": "9b3e085b635875eefbaf6daa14c9f2e3a9bcd8db2d31ef17eee036a1ecf06c74",
+          "peak_rss_kib": 1165184
+        },
+        {
+          "stage": "export",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 1.1195130499999948,
+          "log_sha256": "cc50fa9c2f497ea7e3c378100d6bf208c7e41a23452b1be88fdc36b5a4c9b94c",
+          "peak_rss_kib": 420828
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.983219488000003,
+          "log_sha256": "0b47da55dbd5d4f8c5484c4cfbab1caa2be13640263ad23465f7f2a248345eca",
+          "peak_rss_kib": 340276
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.832062214999979,
+          "log_sha256": "45ffeba0f44301ac5ea849f1336e15e20264552ff6b0a4b066351be4a8cd22df",
+          "peak_rss_kib": 339816
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.881607504000016,
+          "log_sha256": "8a0c9f578d46a6ad1dd6b15735eed069b2931590dfa9900707939d0cb59a4f6d",
+          "peak_rss_kib": 340064
+        }
+      ],
+      "all_corner_setup_pass": false,
+      "dut_sha256": "bea75daa88ef7846663c46e9b207df8ed99e77517d7ad7b023608b2ade53e7db",
+      "models": {
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5"
+      },
+      "run": "segmented-kept",
+      "source_summary_sha256": "01fc8638c6f853630ffcb15ee82c083b29278c6e9c899a81cce3286ece43f40d",
+      "mapped_area_um2": 574101.5616,
+      "mapped_num_cells": 54994,
+      "stat_sha256": "7ee2f0da335b4fbc1c7704238d33fc41e32000d7d18cee02adc21a37b44aa696",
+      "timing_report_sha256": {
+        "slow": "0b47da55dbd5d4f8c5484c4cfbab1caa2be13640263ad23465f7f2a248345eca",
+        "typical": "45ffeba0f44301ac5ea849f1336e15e20264552ff6b0a4b066351be4a8cd22df",
+        "fast": "8a0c9f578d46a6ad1dd6b15735eed069b2931590dfa9900707939d0cb59a4f6d"
+      },
+      "vectorless_power_w": {
+        "slow": 0.336,
+        "typical": 0.412,
+        "fast": 0.509
+      }
+    },
+    {
+      "status": "SCREEN_COMPLETE_NOT_PHYSICAL_CLOSURE",
+      "scope": "registered-input MAC only; ideal clock and zero interconnect; NOT WHOLE FIR",
+      "variant": "segmented_kept",
+      "lanes": 1,
+      "period_ns": 1,
+      "uncertainty_ns": [
+        0.15,
+        0.03
+      ],
+      "input_delay_ns": [
+        0.1,
+        0.05
+      ],
+      "output_delay_ns": [
+        0.1,
+        -0.05
+      ],
+      "load_pf": 0.01,
+      "slew_ns": 0.1,
+      "activity": 0.1,
+      "corners": {
+        "slow": {
+          "setup": [
+            -0.14915,
+            -49.75568
+          ],
+          "hold": [
+            0.06326,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            0.21937,
+            0.0
+          ],
+          "hold": [
+            0.03165,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            0.44926,
+            0.0
+          ],
+          "hold": [
+            -0.00421,
+            -0.04627
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "synth",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 42.626335085999926,
+          "log_sha256": "8da9afa397206ba03d27ada580e14465c7ee86072385f03cbd2034940c57658a",
+          "peak_rss_kib": 1128784
+        },
+        {
+          "stage": "export",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 1.1187056049999455,
+          "log_sha256": "c7a5335e7b5bee4d71557686d76a72ac922517b11a1196ee672ff54e16dc0471",
+          "peak_rss_kib": 422424
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.981580708000024,
+          "log_sha256": "4adf671c4940f841319224c2372282bd84211cfdeba94d7c2754051e0c01633c",
+          "peak_rss_kib": 340244
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.681442922999963,
+          "log_sha256": "dba339c5082e902863e53adf2b542a1c22eba417a056fbd75f71ff4fc39cd9b4",
+          "peak_rss_kib": 340048
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.8326415430000225,
+          "log_sha256": "d86b1c1128b8098468616bd4cf8dc34a7cc237bbb37695bb47076297ad543c0c",
+          "peak_rss_kib": 340340
+        }
+      ],
+      "all_corner_setup_pass": false,
+      "dut_sha256": "bea75daa88ef7846663c46e9b207df8ed99e77517d7ad7b023608b2ade53e7db",
+      "models": {
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5"
+      },
+      "run": "segmented-kept-timingmap",
+      "source_summary_sha256": "7251be2e95160885058aa1eb2a187ddc944378d41110db783c5d61e82dad1109",
+      "mapped_area_um2": 578527.7904,
+      "mapped_num_cells": 55084,
+      "stat_sha256": "b027357d26457dd604e82d7ec766f889efa23608b941f038fdf40250dde25695",
+      "timing_report_sha256": {
+        "slow": "4adf671c4940f841319224c2372282bd84211cfdeba94d7c2754051e0c01633c",
+        "typical": "dba339c5082e902863e53adf2b542a1c22eba417a056fbd75f71ff4fc39cd9b4",
+        "fast": "d86b1c1128b8098468616bd4cf8dc34a7cc237bbb37695bb47076297ad543c0c"
+      },
+      "vectorless_power_w": {
+        "slow": 0.336,
+        "typical": 0.411,
+        "fast": 0.508
+      }
+    },
+    {
+      "status": "SCREEN_COMPLETE_NOT_PHYSICAL_CLOSURE",
+      "scope": "registered-input MAC only; ideal clock and zero interconnect; NOT WHOLE FIR",
+      "variant": "segmented_kept",
+      "lanes": 1,
+      "period_ns": 1,
+      "uncertainty_ns": [
+        0.15,
+        0.03
+      ],
+      "input_delay_ns": [
+        0.1,
+        0.05
+      ],
+      "output_delay_ns": [
+        0.1,
+        -0.05
+      ],
+      "load_pf": 0.01,
+      "slew_ns": 0.1,
+      "activity": 0.1,
+      "corners": {
+        "slow": {
+          "setup": [
+            -0.14037,
+            -85.94789
+          ],
+          "hold": [
+            0.06326,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            0.255,
+            0.0
+          ],
+          "hold": [
+            0.03165,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            0.46257,
+            0.0
+          ],
+          "hold": [
+            -0.00421,
+            -0.04627
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "export",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 1.272660185999996,
+          "log_sha256": "bb5b91fb4e34cc1435268436c48e29fa590089db4d2e49ed2d7db2c99d2feabd",
+          "peak_rss_kib": 420528
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.983252138000012,
+          "log_sha256": "f41bec0a8b87fb67717f3abb3dbba6deb80bf994a944b8b979436c8825ab1ed8",
+          "peak_rss_kib": 339888
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.580503195999995,
+          "log_sha256": "887cf654c4d104275677f0ecc39af78210f248ffa0a7f022ebe96f15c136b403",
+          "peak_rss_kib": 339948
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.63061215099998,
+          "log_sha256": "7665b19553887d385c3f08f4bb715837c34a5e5e3869af354928fb8b79f90f2d",
+          "peak_rss_kib": 339816
+        }
+      ],
+      "all_corner_setup_pass": false,
+      "dut_sha256": "bea75daa88ef7846663c46e9b207df8ed99e77517d7ad7b023608b2ade53e7db",
+      "models": {
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5"
+      },
+      "run": "segmented-kept-x2",
+      "source_summary_sha256": "d99e5d937891bd0c4446a23d197c9b67bfcea3ab85335c5626f20015523d6be3",
+      "mapped_area_um2": 574773.2928,
+      "mapped_num_cells": 54994,
+      "stat_sha256": "775dcd88d3978064a2835bef7902fd557e9cfd0f8ff614505a047439093e08f8",
+      "timing_report_sha256": {
+        "slow": "f41bec0a8b87fb67717f3abb3dbba6deb80bf994a944b8b979436c8825ab1ed8",
+        "typical": "887cf654c4d104275677f0ecc39af78210f248ffa0a7f022ebe96f15c136b403",
+        "fast": "7665b19553887d385c3f08f4bb715837c34a5e5e3869af354928fb8b79f90f2d"
+      },
+      "vectorless_power_w": {
+        "slow": 0.336,
+        "typical": 0.412,
+        "fast": 0.509
+      }
+    },
+    {
+      "status": "SCREEN_COMPLETE_NOT_PHYSICAL_CLOSURE",
+      "scope": "registered-input MAC only; ideal clock and zero interconnect; NOT WHOLE FIR",
+      "variant": "segmented_mask",
+      "lanes": 1,
+      "period_ns": 1,
+      "uncertainty_ns": [
+        0.15,
+        0.03
+      ],
+      "input_delay_ns": [
+        0.1,
+        0.05
+      ],
+      "output_delay_ns": [
+        0.1,
+        -0.05
+      ],
+      "load_pf": 0.01,
+      "slew_ns": 0.1,
+      "activity": 0.1,
+      "corners": {
+        "slow": {
+          "setup": [
+            -0.13432,
+            -55.82989
+          ],
+          "hold": [
+            0.06326,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            0.255,
+            0.0
+          ],
+          "hold": [
+            0.03165,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            0.46257,
+            0.0
+          ],
+          "hold": [
+            -0.00421,
+            -0.04627
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "synth",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 42.42685603899997,
+          "log_sha256": "9495762a6185a040f207eb5a571bf4a2bcbf9357c1b07e0ae57ac9d15f6a5d47",
+          "peak_rss_kib": 1159000
+        },
+        {
+          "stage": "export",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 1.0175222459999986,
+          "log_sha256": "ea1aeda55ca74aad895e01982cae49b67ec20f3b37de97d01911b6da575f0a04",
+          "peak_rss_kib": 427336
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.7308965199999875,
+          "log_sha256": "c66ea0f2cc7687995de3fcd0a0531bc7d298098370c9fe1fbf1eae2a2f82dca9",
+          "peak_rss_kib": 343808
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.580603771000028,
+          "log_sha256": "4417bad70838b70e82c1d8a0af7f82f6a63a67250634ba5aa08e0ccac93a2866",
+          "peak_rss_kib": 343448
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.529639399000075,
+          "log_sha256": "73097988deaf24213dd1f62ad49a1355d793d0d7b594f25d0d7435b5e9cfca87",
+          "peak_rss_kib": 343568
+        }
+      ],
+      "all_corner_setup_pass": false,
+      "dut_sha256": "20b4f76a6d6d63984397c2eb2e245abd953a4a28e7fb803d5657e76f84d35a1c",
+      "models": {
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5"
+      },
+      "run": "segmented-mask",
+      "source_summary_sha256": "efe729327fa520e94752c9e8f43d31fece74159405917402cece8de9b1012518",
+      "mapped_area_um2": 593683.3728,
+      "mapped_num_cells": 56156,
+      "stat_sha256": "56275f1201636479805fa6bffc22278740a9ce7a42b81f2c01074c2977ed1af1",
+      "timing_report_sha256": {
+        "slow": "c66ea0f2cc7687995de3fcd0a0531bc7d298098370c9fe1fbf1eae2a2f82dca9",
+        "typical": "4417bad70838b70e82c1d8a0af7f82f6a63a67250634ba5aa08e0ccac93a2866",
+        "fast": "73097988deaf24213dd1f62ad49a1355d793d0d7b594f25d0d7435b5e9cfca87"
+      },
+      "vectorless_power_w": {
+        "slow": 0.351,
+        "typical": 0.43,
+        "fast": 0.531
+      }
+    },
+    {
+      "status": "SCREEN_COMPLETE_NOT_PHYSICAL_CLOSURE",
+      "scope": "registered-input MAC only; ideal clock and zero interconnect; NOT WHOLE FIR",
+      "variant": "segmented_mask",
+      "lanes": 1,
+      "period_ns": 1,
+      "uncertainty_ns": [
+        0.15,
+        0.03
+      ],
+      "input_delay_ns": [
+        0.1,
+        0.05
+      ],
+      "output_delay_ns": [
+        0.1,
+        -0.05
+      ],
+      "load_pf": 0.01,
+      "slew_ns": 0.1,
+      "activity": 0.1,
+      "corners": {
+        "slow": {
+          "setup": [
+            -0.1146,
+            -35.8766
+          ],
+          "hold": [
+            0.06326,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            0.25098,
+            0.0
+          ],
+          "hold": [
+            0.03165,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            0.4816,
+            0.0
+          ],
+          "hold": [
+            -0.00421,
+            -0.04627
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "export",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 1.0700748360000008,
+          "log_sha256": "e61d092848dd0921ca491ae3b47d47e4228634fde0f066184061c53fc38e79d4",
+          "peak_rss_kib": 427132
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.479412352999999,
+          "log_sha256": "23735dfae05a3f1ee1034c7ec651f08bd620b71742217c74bf2aa00f36617068",
+          "peak_rss_kib": 343688
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.377171273000002,
+          "log_sha256": "8092a249238fc9379f2c73f70069f824c8892c46cfcc35cff1975acc6699c59f",
+          "peak_rss_kib": 344008
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 4.629718084,
+          "log_sha256": "68c9db48b8602cc9adfcd092e6c482d27e28db4d400588a0eaa72feda8123f5f",
+          "peak_rss_kib": 344132
+        }
+      ],
+      "all_corner_setup_pass": false,
+      "dut_sha256": "20b4f76a6d6d63984397c2eb2e245abd953a4a28e7fb803d5657e76f84d35a1c",
+      "models": {
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5"
+      },
+      "run": "segmented-mask-sized",
+      "source_summary_sha256": "b378d5834bf766ee969ed1e0d2dfa86567d59cee03f35eeb2f9c4475d8e8c30f",
+      "mapped_area_um2": 597896.5104,
+      "mapped_num_cells": 56156,
+      "stat_sha256": "278070163b1bcc001a19c85f0c61ce6ffaae01ff4d092eaea1eec522bd5d75e1",
+      "timing_report_sha256": {
+        "slow": "23735dfae05a3f1ee1034c7ec651f08bd620b71742217c74bf2aa00f36617068",
+        "typical": "8092a249238fc9379f2c73f70069f824c8892c46cfcc35cff1975acc6699c59f",
+        "fast": "68c9db48b8602cc9adfcd092e6c482d27e28db4d400588a0eaa72feda8123f5f"
+      },
+      "vectorless_power_w": {
+        "slow": 0.354,
+        "typical": 0.433,
+        "fast": 0.535
+      }
+    },
+    {
+      "status": "PASS",
+      "variant": "deep32",
+      "dut_sha256": "97a018b38f30676a9abd7b3f96028dc92018125c50ffc58608071f30bbf57c1a",
+      "run": "test-credit",
+      "source_summary_sha256": "0706f44b517341fa7118ea01a878f1515245611ffd6857fee77043500929499a"
+    },
+    {
+      "status": "EXPECTED_FAILURE_DETECTED",
+      "variant": "deep32",
+      "dut_sha256": "0cc6a5f6f5a33506e0c9f3483f170a288334ffad6f02d69b07f012f0830e288f",
+      "run": "test-credit-negative",
+      "source_summary_sha256": "d6eb177d52d07c724de675673c08a6ac67d8a864d3a39b371fb6b5b7dc14eec5"
+    },
+    {
+      "status": "PASS",
+      "variant": "deep32",
+      "dut_sha256": "0cc6a5f6f5a33506e0c9f3483f170a288334ffad6f02d69b07f012f0830e288f",
+      "run": "test-credit-onehot",
+      "source_summary_sha256": "33cf3331ab67f4c5acee751a4634632fdc2ad7e262768ee52138c596380537ce"
+    },
+    {
+      "status": "PASS",
+      "variant": "deep32",
+      "dut_sha256": "a91552014a58ee581e9e759c26df9e41f52e8425b66746dfa482d4e93f5e6ea5",
+      "run": "test-deep32",
+      "source_summary_sha256": "936895e76e099827f009030fba662fbeb9b03c28e4ea978dc2414d0089c84868"
+    },
+    {
+      "status": "PASS",
+      "variant": "segmented_mask",
+      "dut_sha256": "41643737c06da6b9ffa6852cd704b6397c3b4d3300d73828de7a536ae75f6105",
+      "run": "test-mask",
+      "source_summary_sha256": "653416192aaaebfd5b23005308b54fc513a93ae420b53c8e6d7d9a0de78f715e"
+    },
+    {
+      "status": "PASS",
+      "variant": "prefix",
+      "dut_sha256": "a633a2b2d27bc7c14d81df424f8cb313472965bc71c142911e93dbce432334b6",
+      "run": "test-prefix",
+      "source_summary_sha256": "d0e7b4b4a238d5acf485c17a0ba56159599a4edd09186539ce47f01034d879f8"
+    },
+    {
+      "status": "PASS",
+      "variant": "segmented",
+      "dut_sha256": "63a4253f7d4c84d70c5b4308d24284610ecf303a329fa51d04cca21468ebf2e7",
+      "run": "test-segmented",
+      "source_summary_sha256": "e46c2ab8fdecd0ab29e4041288c1c9e38e869411b3560df3ef8ea0c103cf090b"
+    },
+    {
+      "status": "SCREEN_COMPLETE_NOT_PHYSICAL_CLOSURE",
+      "scope": "registered-input MAC only; ideal clock and zero interconnect; NOT WHOLE FIR",
+      "variant": "v6",
+      "lanes": 1,
+      "period_ns": 1,
+      "uncertainty_ns": [
+        0.15,
+        0.03
+      ],
+      "input_delay_ns": [
+        0.1,
+        0.05
+      ],
+      "output_delay_ns": [
+        0.1,
+        -0.05
+      ],
+      "load_pf": 0.01,
+      "slew_ns": 0.1,
+      "activity": 0.1,
+      "corners": {
+        "slow": {
+          "setup": [
+            -1.4356,
+            -2001.01343
+          ],
+          "hold": [
+            0.05148,
+            0.0
+          ]
+        },
+        "typical": {
+          "setup": [
+            -0.50995,
+            -295.76797
+          ],
+          "hold": [
+            0.03165,
+            0.0
+          ]
+        },
+        "fast": {
+          "setup": [
+            -0.0199,
+            -0.96563
+          ],
+          "hold": [
+            -0.00421,
+            -0.04627
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": "synth",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 13.363837031999992,
+          "log_sha256": "835adeb2d82bd572908955faada0cf687cec2dc137119425a75e7a857a490805",
+          "peak_rss_kib": 263400
+        },
+        {
+          "stage": "export",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 0.6162821329999701,
+          "log_sha256": "27cd4c28ab20d0f2addc94eed4929bb779f312118396bbd2228a095d11aef9a3",
+          "peak_rss_kib": 251476
+        },
+        {
+          "stage": "sta_slow",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 2.5237795689999984,
+          "log_sha256": "6be19a58c8884295de919ae1bc89e695ab0b9ea9c0da01e75e2e6b85a402314d",
+          "peak_rss_kib": 248568
+        },
+        {
+          "stage": "sta_typical",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 2.3228920480000284,
+          "log_sha256": "249a93242e1a40d2dc81082417d19af6e74cd65b5c420be09aa5afc21f0a1a61",
+          "peak_rss_kib": 248644
+        },
+        {
+          "stage": "sta_fast",
+          "exit_code": 0,
+          "timeout": false,
+          "wall_seconds": 2.372431297999981,
+          "log_sha256": "b008f9553d419c009711ec0ae069d278ded74cd646e459e36ed557068d258b07",
+          "peak_rss_kib": 248168
+        }
+      ],
+      "all_corner_setup_pass": false,
+      "dut_sha256": "4e7b1946296327feccd30cf943068f9c46394c1a930772e51f246e9bfe00fb5a",
+      "models": {
+        "fast.lib": "8ee6e41473acd3e875b8d1473185bedc5d78564a4d56001a8af8f04658f75b82",
+        "slow.lib": "c6dc5053db819a3deff380003ac0d0eae695c22b19e5461563e41fe9fc2b41ca",
+        "typical.lib": "f79391e02ee6a159c42428d7276ce9bdaea063090a153b6a9a650cff0f7146e5"
+      },
+      "run": "v6-remap",
+      "source_summary_sha256": "8bc2a66313bff62a2b187d978146e28e80f70dae124fac2d38daafdb2d75800c",
+      "mapped_area_um2": 244144.656,
+      "mapped_num_cells": 31474,
+      "stat_sha256": "b728dda25fc76b4cd89d75e29e27dfd3d90d3c68e9d2a125e437e0413e71437e",
+      "timing_report_sha256": {
+        "slow": "6be19a58c8884295de919ae1bc89e695ab0b9ea9c0da01e75e2e6b85a402314d",
+        "typical": "249a93242e1a40d2dc81082417d19af6e74cd65b5c420be09aa5afc21f0a1a61",
+        "fast": "b008f9553d419c009711ec0ae069d278ded74cd646e459e36ed557068d258b07"
+      },
+      "vectorless_power_w": {
+        "slow": 0.116,
+        "typical": 0.142,
+        "fast": 0.176
+      }
+    }
+  ]
+}

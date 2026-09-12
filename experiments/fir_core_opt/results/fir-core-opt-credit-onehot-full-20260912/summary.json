@@ -1,0 +1,70 @@
+{
+  "status": "FRAME_FUNCTIONAL_PASS_NOT_STA",
+  "engine": "verilator",
+  "suite": "full",
+  "physical_status": "NOT_RUN",
+  "sources": {
+    "experiments/sram_multirate/run_integrated.py": "f5aff4d50f3d86ed4f636590255d77215173d4def467436ba0c9acc15cd4f101",
+    "experiments/sram_multirate/build_integrated.py": "10d97cfaba776ed082337630987e84066743c0651f7928850f28da4ff19f227e",
+    "rtl/img_filter.v": "b1ffeaf5fccad2442519b58076420b3a723d9c800e29ad7f26974ca817566283",
+    "verification/img_filter_tb.v": "39fa1e7324a8e6d124e17328bd58622332a0842001ad234752dc51123c10ed6d",
+    "experiments/sram_multirate/verification/striped_memory_model.svh": "7f9c1292cad0f2d53ec7d730d670ca127f0d53687718857ac6fab6c73bc20029",
+    "experiments/sram_multirate/rtl/fir_mac_narrow.sv": "a91552014a58ee581e9e759c26df9e41f52e8425b66746dfa482d4e93f5e6ea5",
+    "experiments/sram_multirate/rtl/fir_transaction_queue.sv": "4137e9a79d9dc0d8d19cb063359ab39c2acdcdd724fff88531d93d7c59188423",
+    "experiments/sram_multirate/rtl/mac_credit.sv": "a6cb0bcdbafc9027c5a0fdc478eceda9fb46ef1908a57aaefbf623284381502b",
+    "experiments/sram_multirate/rtl/sram_related_boundary.sv": "23894d14c4336ee0fdca55340ab03a2d6148f5d164bf81e0b75714476f99f67a",
+    "experiments/sram_multirate/rtl/striped_sram_scheduler.sv": "6c4bee9d66ea5f367eae4168591c683c94ee725dce1c05b156b5f0edbd2f4043"
+  },
+  "generated": {
+    "img_filter_multirate.sv": "fe317b24dd5bd231a167b0ad2c22bc0f0371a10c9cc8178e57238862c6fd7533",
+    "tb.sv": "c9447dd008e38127854f588e3ff3ebfd9923844c21d3d5d015656a02742cc425"
+  },
+  "commands": [
+    {
+      "name": "compile",
+      "argv": [
+        "/home/ibex/.local/opt/verilator-v5.050/bin/verilator",
+        "--binary",
+        "--timing",
+        "-j",
+        "2",
+        "-Wno-fatal",
+        "-DMULTIRATE_ASSERTIONS",
+        "-I/home/ibex/fir-core-opt-credit-onehot-full-20260912/source/rtl",
+        "--top-module",
+        "img_filter_tb",
+        "--Mdir",
+        "/home/ibex/fir-core-opt-credit-onehot-full-20260912/run/obj",
+        "/home/ibex/fir-core-opt-credit-onehot-full-20260912/source/rtl/img_filter_def.v",
+        "/home/ibex/fir-core-opt-credit-onehot-full-20260912/run/img_filter_multirate.sv",
+        "/home/ibex/fir-core-opt-credit-onehot-full-20260912/run/tb.sv",
+        "/home/ibex/fir-core-opt-credit-onehot-full-20260912/source/experiments/sram_multirate/rtl/fir_mac_narrow.sv",
+        "/home/ibex/fir-core-opt-credit-onehot-full-20260912/source/experiments/sram_multirate/rtl/fir_transaction_queue.sv",
+        "/home/ibex/fir-core-opt-credit-onehot-full-20260912/source/experiments/sram_multirate/rtl/mac_credit.sv",
+        "/home/ibex/fir-core-opt-credit-onehot-full-20260912/source/experiments/sram_multirate/rtl/sram_related_boundary.sv",
+        "/home/ibex/fir-core-opt-credit-onehot-full-20260912/source/experiments/sram_multirate/rtl/striped_sram_scheduler.sv"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 173.22235341199996,
+      "pass": true,
+      "sha256": "168505e04b6980308e88ac46948e224bde9aca5bae4dee90bf6b854d35920c51"
+    },
+    {
+      "name": "frames",
+      "argv": [
+        "/home/ibex/fir-core-opt-credit-onehot-full-20260912/run/obj/Vimg_filter_tb",
+        "+ALL_KERNELS",
+        "+RESET_SWEEP"
+      ],
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 323.96115671,
+      "pass": true,
+      "sha256": "e7a42aef3f64fc58b8de3ce5eb25d9889e12412749eedf6688ade0092070270d"
+    }
+  ],
+  "frames": 134,
+  "checks": 6331544,
+  "errors": 0
+}

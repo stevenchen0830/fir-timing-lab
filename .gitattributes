@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.log text eol=lf
+*.sha256 text eol=lf
+*.json text eol=lf
+*.sv text eol=lf
+*.v text eol=lf
+*.svh text eol=lf
+

@@ -1,0 +1,19 @@
+{
+  "variant": "deep32",
+  "status": "PASS",
+  "latency_enabled_cycles": 32,
+  "dut_sha256": "a91552014a58ee581e9e759c26df9e41f52e8425b66746dfa482d4e93f5e6ea5",
+  "rows": [
+    {
+      "name": "compile",
+      "exit_code": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "run",
+      "exit_code": 0,
+      "sha256": "3e7c1f2c68cd9658474c964e78c3f4cd50b72d87c9785be1aa2cdb37a1b5269c"
+    }
+  ],
+  "wall_seconds": 25.627954641000002
+}

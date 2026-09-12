@@ -1,0 +1,150 @@
+== IMG_FILTER regression seed=0x12345678 ==
+    28x25   blk_v=5  gap=20/30 : 338    cyc (ideal 175  ), rd=672     wr=175   , 1st out +81
+RESET_RECOVERY_PASS offset=4
+    28x25   blk_v=5  gap=20/30 : 326    cyc (ideal 175  ), rd=672     wr=175   , 1st out +83
+RESET_RECOVERY_PASS offset=20
+    28x25   blk_v=5  gap=20/30 : 332    cyc (ideal 175  ), rd=672     wr=175   , 1st out +83
+RESET_RECOVERY_PASS offset=60
+    28x25   blk_v=5  gap=20/30 : 333    cyc (ideal 175  ), rd=672     wr=175   , 1st out +81
+RESET_RECOVERY_PASS offset=100
+    28x25   blk_v=5  gap=20/30 : 326    cyc (ideal 175  ), rd=672     wr=175   , 1st out +80
+RESET_RECOVERY_PASS offset=200
+    32x24   blk_v=1  gap=0 /0  : 256    cyc (ideal 192  ), rd=0       wr=0     , 1st out +64
+    32x24   blk_v=3  gap=0 /0  : 264    cyc (ideal 192  ), rd=376     wr=192   , 1st out +72
+    28x25   blk_v=5  gap=0 /0  : 253    cyc (ideal 175  ), rd=672     wr=175   , 1st out +78
+    26x24   blk_v=7  gap=0 /0  : 253    cyc (ideal 168  ), rd=945     wr=168   , 1st out +85
+    25x27   blk_v=9  gap=0 /0  : 281    cyc (ideal 189  ), rd=1400    wr=189   , 1st out +92
+    24x24   blk_v=49 gap=0 /0  : 352    cyc (ideal 144  ), rd=3408    wr=144   , 1st out +208
+    24x25   blk_v=49 gap=0 /0  : 358    cyc (ideal 150  ), rd=3708    wr=150   , 1st out +208
+    32x48   blk_v=49 gap=0 /0  : 640    cyc (ideal 384  ), rd=13440   wr=384   , 1st out +256
+    24x30   blk_v=47 gap=0 /0  : 382    cyc (ideal 180  ), rd=4962    wr=180   , 1st out +202
+    32x30   blk_v=25 gap=40/0  : 578    cyc (ideal 240  ), rd=4608    wr=240   , 1st out +220
+    32x30   blk_v=25 gap=0 /40 : 540    cyc (ideal 240  ), rd=4608    wr=240   , 1st out +160
+    40x32   blk_v=49 gap=30/30 : 855    cyc (ideal 320  ), rd=9440    wr=320   , 1st out +392
+    24x24   blk_v=49 gap=60/60 : 755    cyc (ideal 144  ), rd=3408    wr=144   , 1st out +422
+    24x49   blk_v=49 gap=0 /0  : 502    cyc (ideal 294  ), rd=10356   wr=294   , 1st out +208
+    24x50   blk_v=49 gap=0 /0  : 508    cyc (ideal 300  ), rd=10308   wr=300   , 1st out +208
+    28x51   blk_v=49 gap=0 /0  : 589    cyc (ideal 357  ), rd=12537   wr=357   , 1st out +232
+    32x120  blk_v=49 gap=0 /0  : 1216   cyc (ideal 960  ), rd=38432   wr=960   , 1st out +256
+    32x100  blk_v=25 gap=10/10 : 1068   cyc (ideal 800  ), rd=18048   wr=800   , 1st out +177
+    24x512  blk_v=3  gap=0 /0  : 3142   cyc (ideal 3072 ), rd=6138    wr=3072  , 1st out +70
+   320x40   blk_v=13 gap=0 /0  : 3744   cyc (ideal 3200 ), rd=35520   wr=3200  , 1st out +544
+  1440x26   blk_v=49 gap=0 /0  : 18064  cyc (ideal 9360 ), rd=235440  wr=9360  , 1st out +8704
+   640x32   blk_v=3  gap=0 /0  : 5344   cyc (ideal 5120 ), rd=10080   wr=5120  , 1st out +224
+    27x24   blk_v=11 gap=0 /0  : 267    cyc (ideal 168  ), rd=1505    wr=168   , 1st out +99
+    29x31   blk_v=21 gap=10/10 : 436    cyc (ideal 248  ), rd=4160    wr=248   , 1st out +151
+  1439x24   blk_v=1  gap=0 /0  : 8704   cyc (ideal 8640 ), rd=0       wr=0     , 1st out +64
+    24x4096 blk_v=3  gap=0 /0  : 24646  cyc (ideal 24576), rd=49146   wr=24576 , 1st out +70
+    62x66   blk_v=29 gap=0 /0  : 1344   cyc (ideal 1056 ), rd=26432   wr=1056  , 1st out +288
+   290x53   blk_v=23 gap=0 /0  : 4736   cyc (ideal 3869 ), rd=76285   wr=3869  , 1st out +867
+   156x100  blk_v=9  gap=0 /0  : 4120   cyc (ideal 3900 ), rd=30576   wr=3900  , 1st out +220
+   251x136  blk_v=3  gap=0 /0  : 8695   cyc (ideal 8568 ), rd=17073   wr=8568  , 1st out +127
+   180x38   blk_v=1  gap=0 /0  : 1774   cyc (ideal 1710 ), rd=0       wr=0     , 1st out +64
+    45x211  blk_v=3  gap=0 /0  : 2608   cyc (ideal 2532 ), rd=5052    wr=2532  , 1st out +76
+   231x66   blk_v=3  gap=0 /0  : 3950   cyc (ideal 3828 ), rd=7598    wr=3828  , 1st out +122
+   117x154  blk_v=9  gap=0 /0  : 4804   cyc (ideal 4620 ), rd=36480   wr=4620  , 1st out +184
+    26x179  blk_v=37 gap=0 /0  : 1443   cyc (ideal 1253 ), rd=40600   wr=1253  , 1st out +190
+   195x24   blk_v=15 gap=0 /0  : 1583   cyc (ideal 1176 ), rd=14063   wr=1176  , 1st out +407
+   263x51   blk_v=1  gap=0 /0  : 3430   cyc (ideal 3366 ), rd=0       wr=0     , 1st out +64
+    29x62   blk_v=19 gap=0 /0  : 632    cyc (ideal 496  ), rd=8280    wr=496   , 1st out +136
+   253x39   blk_v=21 gap=0 /0  : 3200   cyc (ideal 2496 ), rd=43520   wr=2496  , 1st out +704
+    39x220  blk_v=39 gap=0 /0  : 2454   cyc (ideal 2200 ), rd=79990   wr=2200  , 1st out +254
+   261x84   blk_v=17 gap=15/44 : 10577  cyc (ideal 5544 ), rd=84480   wr=5544  , 1st out +683
+    80x79   blk_v=1  gap=44/29 : 2881   cyc (ideal 1580 ), rd=0       wr=0     , 1st out +65
+   276x29   blk_v=45 gap=21/8  : 4267   cyc (ideal 2001 ), rd=53199   wr=2001  , 1st out +2027
+   280x31   blk_v=37 gap=34/19 : 4849   cyc (ideal 2170 ), rd=55440   wr=2170  , 1st out +1946
+   315x134  blk_v=9  gap=27/16 : 14901  cyc (ideal 10586), rd=83424   wr=10586 , 1st out +489
+   298x77   blk_v=17 gap=45/49 : 12436  cyc (ideal 5775 ), rd=87600   wr=5775  , 1st out +1162
+   212x104  blk_v=17 gap=12/16 : 7038   cyc (ideal 5512 ), rd=84800   wr=5512  , 1st out +531
+   121x89   blk_v=37 gap=25/32 : 4833   cyc (ideal 2759 ), rd=89280   wr=2759  , 1st out +797
+   279x117  blk_v=5  gap=14/0  : 9757   cyc (ideal 8190 ), rd=32480   wr=8190  , 1st out +227
+   257x30   blk_v=45 gap=5 /15 : 3824   cyc (ideal 1950 ), rd=53430   wr=1950  , 1st out +1572
+   213x47   blk_v=39 gap=14/33 : 4960   cyc (ideal 2538 ), rd=76950   wr=2538  , 1st out +1240
+   128x188  blk_v=13 gap=16/37 : 9834   cyc (ideal 6016 ), rd=71040   wr=6016  , 1st out +295
+   271x213  blk_v=3  gap=13/46 : 26825  cyc (ideal 14484), rd=28900   wr=14484 , 1st out +143
+   259x32   blk_v=45 gap=38/13 : 4981   cyc (ideal 2080 ), rd=58890   wr=2080  , 1st out +2302
+    24x24   blk_v=1  gap=0 /0  : 208    cyc (ideal 144  ), rd=0       wr=0     , 1st out +64
+    27x25   blk_v=1  gap=25/35 : 330    cyc (ideal 175  ), rd=0       wr=0     , 1st out +64
+  1440x24   blk_v=1  gap=0 /0  : 8704   cyc (ideal 8640 ), rd=0       wr=0     , 1st out +64
+    24x24   blk_v=3  gap=0 /0  : 214    cyc (ideal 144  ), rd=282     wr=144   , 1st out +70
+    27x25   blk_v=3  gap=25/35 : 348    cyc (ideal 175  ), rd=343     wr=175   , 1st out +74
+  1440x24   blk_v=3  gap=0 /0  : 9064   cyc (ideal 8640 ), rd=16920   wr=8640  , 1st out +424
+    24x24   blk_v=5  gap=0 /0  : 220    cyc (ideal 144  ), rd=552     wr=144   , 1st out +76
+    27x25   blk_v=5  gap=25/35 : 357    cyc (ideal 175  ), rd=672     wr=175   , 1st out +84
+  1440x24   blk_v=5  gap=0 /0  : 9424   cyc (ideal 8640 ), rd=33120   wr=8640  , 1st out +784
+    24x24   blk_v=7  gap=0 /0  : 226    cyc (ideal 144  ), rd=810     wr=144   , 1st out +82
+    27x25   blk_v=7  gap=25/35 : 349    cyc (ideal 175  ), rd=987     wr=175   , 1st out +91
+  1440x24   blk_v=7  gap=0 /0  : 9784   cyc (ideal 8640 ), rd=48600   wr=8640  , 1st out +1144
+    24x24   blk_v=9  gap=0 /0  : 232    cyc (ideal 144  ), rd=1056    wr=144   , 1st out +88
+    27x25   blk_v=9  gap=25/35 : 398    cyc (ideal 175  ), rd=1288    wr=175   , 1st out +113
+  1440x24   blk_v=9  gap=0 /0  : 10144  cyc (ideal 8640 ), rd=63360   wr=8640  , 1st out +1504
+    24x24   blk_v=11 gap=0 /0  : 238    cyc (ideal 144  ), rd=1290    wr=144   , 1st out +94
+    27x25   blk_v=11 gap=25/35 : 381    cyc (ideal 175  ), rd=1575    wr=175   , 1st out +111
+  1440x24   blk_v=11 gap=0 /0  : 10504  cyc (ideal 8640 ), rd=77400   wr=8640  , 1st out +1864
+    24x24   blk_v=13 gap=0 /0  : 244    cyc (ideal 144  ), rd=1512    wr=144   , 1st out +100
+    27x25   blk_v=13 gap=25/35 : 405    cyc (ideal 175  ), rd=1848    wr=175   , 1st out +126
+  1440x24   blk_v=13 gap=0 /0  : 10864  cyc (ideal 8640 ), rd=90720   wr=8640  , 1st out +2224
+    24x24   blk_v=15 gap=0 /0  : 250    cyc (ideal 144  ), rd=1722    wr=144   , 1st out +106
+    27x25   blk_v=15 gap=25/35 : 416    cyc (ideal 175  ), rd=2107    wr=175   , 1st out +132
+  1440x24   blk_v=15 gap=0 /0  : 11224  cyc (ideal 8640 ), rd=103320  wr=8640  , 1st out +2584
+    24x24   blk_v=17 gap=0 /0  : 256    cyc (ideal 144  ), rd=1920    wr=144   , 1st out +112
+    27x25   blk_v=17 gap=25/35 : 425    cyc (ideal 175  ), rd=2352    wr=175   , 1st out +141
+  1440x24   blk_v=17 gap=0 /0  : 11584  cyc (ideal 8640 ), rd=115200  wr=8640  , 1st out +2944
+    24x24   blk_v=19 gap=0 /0  : 262    cyc (ideal 144  ), rd=2106    wr=144   , 1st out +118
+    27x25   blk_v=19 gap=25/35 : 425    cyc (ideal 175  ), rd=2583    wr=175   , 1st out +155
+  1440x24   blk_v=19 gap=0 /0  : 11944  cyc (ideal 8640 ), rd=126360  wr=8640  , 1st out +3304
+    24x24   blk_v=21 gap=0 /0  : 268    cyc (ideal 144  ), rd=2280    wr=144   , 1st out +124
+    27x25   blk_v=21 gap=25/35 : 430    cyc (ideal 175  ), rd=2800    wr=175   , 1st out +163
+  1440x24   blk_v=21 gap=0 /0  : 12304  cyc (ideal 8640 ), rd=136800  wr=8640  , 1st out +3664
+    24x24   blk_v=23 gap=0 /0  : 274    cyc (ideal 144  ), rd=2442    wr=144   , 1st out +130
+    27x25   blk_v=23 gap=25/35 : 437    cyc (ideal 175  ), rd=3003    wr=175   , 1st out +167
+  1440x24   blk_v=23 gap=0 /0  : 12664  cyc (ideal 8640 ), rd=146520  wr=8640  , 1st out +4024
+    24x24   blk_v=25 gap=0 /0  : 280    cyc (ideal 144  ), rd=2592    wr=144   , 1st out +136
+    27x25   blk_v=25 gap=25/35 : 457    cyc (ideal 175  ), rd=3192    wr=175   , 1st out +179
+  1440x24   blk_v=25 gap=0 /0  : 13024  cyc (ideal 8640 ), rd=155520  wr=8640  , 1st out +4384
+    24x24   blk_v=27 gap=0 /0  : 286    cyc (ideal 144  ), rd=2730    wr=144   , 1st out +142
+    27x25   blk_v=27 gap=25/35 : 441    cyc (ideal 175  ), rd=3367    wr=175   , 1st out +180
+  1440x24   blk_v=27 gap=0 /0  : 13384  cyc (ideal 8640 ), rd=160200  wr=8640  , 1st out +4744
+    24x24   blk_v=29 gap=0 /0  : 292    cyc (ideal 144  ), rd=2856    wr=144   , 1st out +148
+    27x25   blk_v=29 gap=25/35 : 463    cyc (ideal 175  ), rd=3528    wr=175   , 1st out +197
+  1440x24   blk_v=29 gap=0 /0  : 13744  cyc (ideal 8640 ), rd=171360  wr=8640  , 1st out +5104
+    24x24   blk_v=31 gap=0 /0  : 298    cyc (ideal 144  ), rd=2970    wr=144   , 1st out +154
+    27x25   blk_v=31 gap=25/35 : 497    cyc (ideal 175  ), rd=3675    wr=175   , 1st out +207
+  1440x24   blk_v=31 gap=0 /0  : 14104  cyc (ideal 8640 ), rd=178200  wr=8640  , 1st out +5464
+    24x24   blk_v=33 gap=0 /0  : 304    cyc (ideal 144  ), rd=3072    wr=144   , 1st out +160
+    27x25   blk_v=33 gap=25/35 : 503    cyc (ideal 175  ), rd=3808    wr=175   , 1st out +213
+  1440x24   blk_v=33 gap=0 /0  : 14464  cyc (ideal 8640 ), rd=184320  wr=8640  , 1st out +5824
+    24x24   blk_v=35 gap=0 /0  : 310    cyc (ideal 144  ), rd=3162    wr=144   , 1st out +166
+    27x25   blk_v=35 gap=25/35 : 515    cyc (ideal 175  ), rd=3927    wr=175   , 1st out +230
+  1440x24   blk_v=35 gap=0 /0  : 14824  cyc (ideal 8640 ), rd=189720  wr=8640  , 1st out +6184
+    24x24   blk_v=37 gap=0 /0  : 316    cyc (ideal 144  ), rd=3240    wr=144   , 1st out +172
+    27x25   blk_v=37 gap=25/35 : 503    cyc (ideal 175  ), rd=3948    wr=175   , 1st out +240
+  1440x24   blk_v=37 gap=0 /0  : 15184  cyc (ideal 8640 ), rd=190080  wr=8640  , 1st out +6544
+    24x24   blk_v=39 gap=0 /0  : 322    cyc (ideal 144  ), rd=3306    wr=144   , 1st out +178
+    27x25   blk_v=39 gap=25/35 : 497    cyc (ideal 175  ), rd=4123    wr=175   , 1st out +234
+  1440x24   blk_v=39 gap=0 /0  : 15544  cyc (ideal 8640 ), rd=198360  wr=8640  , 1st out +6904
+    24x24   blk_v=41 gap=0 /0  : 328    cyc (ideal 144  ), rd=3288    wr=144   , 1st out +184
+    27x25   blk_v=41 gap=25/35 : 504    cyc (ideal 175  ), rd=4144    wr=175   , 1st out +250
+  1440x24   blk_v=41 gap=0 /0  : 15904  cyc (ideal 8640 ), rd=201600  wr=8640  , 1st out +7264
+    24x24   blk_v=43 gap=0 /0  : 334    cyc (ideal 144  ), rd=3402    wr=144   , 1st out +190
+    27x25   blk_v=43 gap=25/35 : 513    cyc (ideal 175  ), rd=4221    wr=175   , 1st out +256
+  1440x24   blk_v=43 gap=0 /0  : 16264  cyc (ideal 8640 ), rd=199800  wr=8640  , 1st out +7624
+    24x24   blk_v=45 gap=0 /0  : 340    cyc (ideal 144  ), rd=3420    wr=144   , 1st out +196
+    27x25   blk_v=45 gap=25/35 : 540    cyc (ideal 175  ), rd=4256    wr=175   , 1st out +268
+  1440x24   blk_v=45 gap=0 /0  : 16624  cyc (ideal 8640 ), rd=205200  wr=8640  , 1st out +7984
+    24x24   blk_v=47 gap=0 /0  : 346    cyc (ideal 144  ), rd=3426    wr=144   , 1st out +202
+    27x25   blk_v=47 gap=25/35 : 558    cyc (ideal 175  ), rd=4151    wr=175   , 1st out +280
+  1440x24   blk_v=47 gap=0 /0  : 16984  cyc (ideal 8640 ), rd=207000  wr=8640  , 1st out +8344
+    24x24   blk_v=49 gap=0 /0  : 352    cyc (ideal 144  ), rd=3456    wr=144   , 1st out +208
+    27x25   blk_v=49 gap=25/35 : 569    cyc (ideal 175  ), rd=4368    wr=175   , 1st out +292
+  1440x24   blk_v=49 gap=0 /0  : 17344  cyc (ideal 8640 ), rd=207360  wr=8640  , 1st out +8704
+BOUNDARY checks=196587 command_checks=181219
+== 134 frames, 6331544 component checks, 0 errors, longest dead run 119 ==
+ALIGNMENT checks=507800 errors=0
+COVERAGE blk_v=2aaaaaaaaaaaa width_mod4=f bank_wrap_frames=26
+COVERAGE shifts s1=1ffffffffffff s2=1ffffffffffff s3=1ffffffffffff
+TEST PASSED
+- /home/ibex/fir-timing-lab-publish-full-20260912/run/tb.sv:652: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 590us; walltime 280.538 s; speed 2.102 us/s
+- Verilator: cpu 280.431 s on 1 threads; allocated 21 MB

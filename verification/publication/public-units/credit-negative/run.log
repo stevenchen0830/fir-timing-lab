@@ -1,0 +1,2 @@
+FATAL: /home/ibex/fir-timing-lab-publish-units-20260912/credit-negative/dut.sv:142: CREDIT_ONEHOT_CORRUPTION
+       Time: 504500  Scope: tb.dut

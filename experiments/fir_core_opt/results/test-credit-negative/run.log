@@ -1,0 +1,2 @@
+FATAL: /root/fir-core-opt-20260912/test-credit-negative/dut.sv:142: CREDIT_ONEHOT_CORRUPTION
+       Time: 504500 Scope: tb.dut
