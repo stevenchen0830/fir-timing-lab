@@ -60,6 +60,12 @@ output markers. Historical comparisons differ across microarchitectures because
 latency changes the random-stimulus consumption schedule; all variants still
 execute the same frame suite. Counts are not independently interchangeable across engines.
 
+Since 2026-10-29, `verification/img_filter_tb.v` gives its first 24x24
+`blk_v=49` frame fixed coefficients (the PREP load-count sentinel). A fresh run
+keeps the same frames, checks and errors as the archived publication, but that
+frame's `rd=` count and the testbench hashes (source and generated `tb.sv`)
+differ from the archived files.
+
 The delayed SRAM model uses 1.8 ns tCO. It is an original behavioral model, not
 a redistributed TSMC macro and not a qualified min/max PVT interface budget.
 A +SLOW_DATA option exists in the integrated runner to demonstrate timing-model

@@ -305,7 +305,7 @@ module img_filter_tb;
     // legal coefficient set: (blk_v-1)/2+1 values, blk_v symmetric taps, 128
     task make_coef;
         input integer bv;
-        integer hvv, t, left, idx, v;
+        integer hvv, t, left, idx;
         begin
             hvv  = (bv-1)/2;
             for (idx = 0; idx <= 24; idx = idx + 1) wgt[idx] = 8'd0;
@@ -325,6 +325,15 @@ module img_filter_tb;
                 end
             end
             wgt[hvv] = wgt[hvv] + left[7:0];
+            pack_coef(hvv);
+        end
+    endtask
+
+    // wgt[0..hvv] -> coef port value and expanded golden taps, sum check
+    task pack_coef;
+        input integer hvv;
+        integer idx, v;
+        begin
             coef_v = 200'd0;
             for (idx = 0; idx <= hvv; idx = idx + 1)
                 coef_v[idx*8 +: 8] = wgt[idx];
@@ -339,6 +348,33 @@ module img_filter_tb;
                 $display("TB ERROR: coefficient sum %0d != 128", sum_c);
                 errors = errors + 1;
             end
+        end
+    endtask
+
+    // Fixed coefficients for the PREP sentinel frame.  Only at H = 24 and
+    // blk_v = 49 does the row-0 vector (the one loaded during PREP) need the
+    // bottom fold, so that frame shape is the one that notices a PREP load
+    // count that runs ahead of the mod_x reduction.  A random set can leave
+    // the outermost byte at zero and hide that fold, so the sentinel frame
+    // uses: outermost byte 2, other side bytes 1, the centre takes the rest.
+    // make_coef still runs first, which keeps the random stream of every
+    // later frame unchanged.
+    reg sentinel_next = 1'b0;     // set right before a sentinel run_frame
+
+    task make_sentinel_coef;
+        input integer bv;
+        integer hvv, idx;
+        begin
+            hvv = (bv-1)/2;
+            for (idx = 0; idx <= 24; idx = idx + 1) wgt[idx] = 8'd0;
+            if (hvv == 0) begin
+                wgt[0] = 8'd128;
+            end else begin
+                wgt[0] = 8'd2;
+                for (idx = 1; idx < hvv; idx = idx + 1) wgt[idx] = 8'd1;
+                wgt[hvv] = 8'd126 - {hvv[6:0], 1'b0};
+            end
+            pack_coef(hvv);
         end
     endtask
 
@@ -361,6 +397,10 @@ module img_filter_tb;
             if (height > 49) bank_wrap_frames = bank_wrap_frames + 1;
             in_gap = ingap;  out_gap = outgap;
             make_coef(bv);
+            if (sentinel_next) begin
+                make_sentinel_coef(bv);
+                sentinel_next = 1'b0;
+            end
 
             for (rr = 0; rr < H; rr = rr + 1) begin
                 for (cc = 0; cc < W; cc = cc + 1) begin
@@ -529,6 +569,7 @@ module img_filter_tb;
         run_frame(  28,  25,  5,  0,  0, 0);
         run_frame(  26,  24,  7,  0,  0, 1);   // width not a multiple of 4
         run_frame(  25,  27,  9,  0,  0, 1);
+        sentinel_next = 1'b1;                  // PREP sentinel coefficients
         run_frame(  24,  24, 49,  0,  0, 0);   // both edges fold, minimum H
         run_frame(  24,  25, 49,  0,  0, 0);
         run_frame(  32,  48, 49,  0,  0, 0);
